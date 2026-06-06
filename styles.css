@@ -1,0 +1,166 @@
+/* ===========================================================
+   Oz Scholars Academy — custom styles
+   (Tailwind utility classes are loaded via the Play CDN in
+   index.html; this file holds theme tokens, fonts, the few
+   things Tailwind can't express inline, and the extras.)
+   =========================================================== */
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --primary: #030213;
+  --brand-red: #FF0040;
+  --brand-blue: #0080FF;
+  --brand-green: #00D66B;
+  --brand-gold: #FFD700;
+  --brand-orange: #FF8C00;
+  --radius: 0.625rem;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  /* offset for the sticky navbar when jumping to anchors */
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Distinctive display face for big headings (replaces generic AI look) */
+h1, h2, h3, h4, .font-display {
+  font-family: 'Sora', 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* ---- Lucide icons sizing: match lucide-react default stroke look ---- */
+[data-lucide] {
+  stroke-width: 2;
+}
+
+/* ---- FAQ accordion (replaces React max-h transition) ---- */
+.faq-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.faq-panel.open {
+  max-height: 600px;
+}
+
+/* ===========================================================
+   EXTRAS (additive — not in the original React)
+   =========================================================== */
+
+/* Scroll-reveal: elements fade/slide in as they enter the viewport */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Floating "Book a Call" button (bottom-right) */
+.floating-cta {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 9999px;
+  background: #FF0040;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 12px 30px -8px rgba(255, 0, 64, 0.6);
+  opacity: 0;
+  transform: translateY(20px) scale(0.96);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease;
+}
+.floating-cta.show {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+.floating-cta:hover { background: #FF3366; transform: translateY(-2px); }
+
+/* Scroll progress bar under the navbar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  z-index: 60;
+  background: linear-gradient(to right, #0080FF, #FFD700, #00D66B);
+  transition: width 0.1s linear;
+}
+
+/* Mobile menu panel */
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: max-height 0.25s ease, opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+#mobile-menu.open {
+  max-height: 320px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 767px) {
+  nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #mobile-menu {
+    margin-top: 0.75rem;
+    border-top: 1px solid #e5e7eb;
+    background: white;
+  }
+
+  #mobile-menu > div {
+    padding-bottom: 0.75rem;
+  }
+
+  #mobile-menu a {
+    display: block;
+    width: 100%;
+  }
+
+  .floating-cta {
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #mobile-menu {
+    display: none;
+  }
+}
