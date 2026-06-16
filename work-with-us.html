@@ -124,7 +124,6 @@
         <div style="display:flex; justify-content:space-between; padding:.8rem 0; border-bottom:1px solid var(--line);"><span>Junior Tutor</span><span class="price">$30–35<span style="font-size:.6em; font-weight:600;">/hr</span></span></div>
         <div style="display:flex; justify-content:space-between; padding:.8rem 0; border-bottom:1px solid var(--line);"><span>Standard Tutor</span><span class="price">$35–45<span style="font-size:.6em; font-weight:600;">/hr</span></span></div>
         <div style="display:flex; justify-content:space-between; padding:.8rem 0; border-bottom:1px solid var(--line);"><span>Senior Tutor</span><span class="price">$45–55<span style="font-size:.6em; font-weight:600;">/hr</span></span></div>
-        <div style="display:flex; justify-content:space-between; padding:.8rem 0;"><span>Specialist / Program Lead</span><span class="price">$55+<span style="font-size:.6em; font-weight:600;">/hr</span></span></div>
       </div>
     </div>
     <div class="reveal" style="transition-delay:.08s;">
@@ -133,7 +132,6 @@
       <p style="color:var(--ink-soft); margin-bottom:1.2rem;">A few simple, performance-based bonuses — no busywork, no gimmicks.</p>
       <div class="card-flat reveal" style="margin-bottom:.8rem;"><h3 style="font-size:1.08rem; margin-bottom:.25rem;">Content creation bonus</h3><p style="font-size:.93rem; color:var(--ink-soft);">Create approved worksheets, quizzes or resources we add to the library.</p></div>
       <div class="card-flat reveal" style="margin-bottom:.8rem;"><h3 style="font-size:1.08rem; margin-bottom:.25rem;">Referral bonus</h3><p style="font-size:.93rem; color:var(--ink-soft);">Refer another great tutor — or a family — who joins and stays.</p></div>
-      <div class="card-flat reveal"><h3 style="font-size:1.08rem; margin-bottom:.25rem;">Lead Tutor bonus</h3><p style="font-size:.93rem; color:var(--ink-soft);">Mentor other tutors and help review lesson quality as you grow.</p></div>
     </div>
   </div>
 </section>
@@ -212,7 +210,9 @@
       <p style="color:var(--ink-soft); margin-top:.5rem;">A few minutes now. We read every application and reply to all of them.</p>
     </div>
 
-    <form class="reveal card" data-demo style="padding:1.8rem;" action="#" method="post">
+    <form class="reveal card" style="padding:1.8rem;" action="https://formbold.com/s/oaYxK" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="subject" value="New tutor application - Oz Scholars Academy" />
+      <input type="hidden" name="form_name" value="Tutor Application" />
       <div class="form-success">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Thanks for applying! We'll review it and be in touch about next steps.
@@ -233,7 +233,7 @@
         <div class="field"><label>Year levels <span class="req">*</span></label>
           <select class="select" name="years" required><option value="" disabled selected>Choose</option><option>Primary (3–6)</option><option>Junior high (7–10)</option><option>Senior (11–12)</option><option>A mix</option></select>
         </div>
-        <div class="field"><label>Hours/week available</label>
+        <div class="field"><label>Hours/week available <span class="req">*</span> </label>
           <select class="select" name="availability"><option value="" disabled selected>Choose</option><option>Up to 5</option><option>5–10</option><option>10–20</option><option>20+</option></select>
         </div>
       </div>
@@ -241,7 +241,7 @@
       <div class="field"><label>Working With Children Check <span class="req">*</span></label>
         <select class="select" name="wwcc" required><option value="" disabled selected>Choose</option><option>I have a current WWCC</option><option>I've applied for one</option><option>I'm willing to obtain one</option></select>
       </div>
-      <div class="field"><label>LinkedIn / portfolio link</label><input class="input" name="link" placeholder="Optional, but helps" /></div>
+      <div class="field"><label>LinkedIn / portfolio link <span class="req">*</span></label><input class="input" name="link" required /></div>
       <div class="field"><label>Why do you want to teach with us? <span class="req">*</span></label><textarea class="textarea" name="why" required placeholder="A few sentences about your experience and why this appeals to you"></textarea></div>
       <label class="checkbox-row" style="margin-bottom:1.2rem;">
         <input type="checkbox" name="consent" required />

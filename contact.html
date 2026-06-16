@@ -68,7 +68,9 @@
     <!-- Booking / enquiry form -->
     <div class="reveal card" style="transition-delay:.08s; padding:1.8rem;">
       <h2 style="font-size:1.3rem; margin-bottom:1rem;">Book your free lesson</h2>
-      <form data-demo action="#" method="post">
+      <form action="https://formbold.com/s/94dQj" method="POST">
+        <input type="hidden" name="subject" value="New parent enquiry - Oz Scholars Academy" />
+        <input type="hidden" name="form_name" value="Parent Free Lesson Enquiry" />
         <div class="form-success">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Got it! We'll be in touch within one business day to lock in a time.
@@ -76,7 +78,7 @@
         <div class="field"><label>Your name <span class="req">*</span></label><input class="input" name="name" required placeholder="Parent or student name" /></div>
         <div class="split" style="gap:1rem;">
           <div class="field"><label>Email <span class="req">*</span></label><input class="input" type="email" name="email" required placeholder="you@email.com" /></div>
-          <div class="field"><label>Phone</label><input class="input" type="tel" name="phone" placeholder="Optional" /></div>
+          <div class="field"><label>Phone <span class="req">*</span></label><input class="input" type="tel" name="phone" placeholder="Optional" /></div>
         </div>
         <div class="split" style="gap:1rem;">
           <div class="field"><label>I'm a… <span class="req">*</span></label>
@@ -90,7 +92,7 @@
         </div>
         <div class="split" style="gap:1rem;">
           <div class="field"><label>Main subject <span class="req">*</span></label>
-            <select class="select" name="subject" required><option value="" disabled selected>Choose</option><option>Maths</option><option>English</option><option>Science</option><option>Study skills</option><option>Selective / scholarship</option><option>Tech Lab</option><option>Other</option></select>
+            <select class="select" name="learning_subject" required><option value="" disabled selected>Choose</option><option>Maths</option><option>English</option><option>Science</option><option>Study skills</option><option>Selective / scholarship</option><option>Tech Lab</option><option>Other</option></select>
           </div>
           <div class="field"><label>How soon? <span class="req">*</span></label>
             <select class="select" name="urgency" required><option value="" disabled selected>Choose</option><option>ASAP</option><option>This month</option><option>This term</option><option>Just browsing</option></select>
@@ -109,6 +111,23 @@
     </div>
   </div>
 </header>
+
+<!-- UNSURE / CALENDLY CALL -->
+<section class="section" id="speak" style="background:#fff; border-block:1px solid var(--line);">
+  <div class="wrap" style="max-width:58rem;">
+    <div class="reveal" style="text-align:center; margin-bottom:1.4rem;">
+      <span class="eyebrow">Unsure?</span>
+      <h2 style="font-size:clamp(1.6rem,3.2vw,2.2rem); margin-top:.5rem;">Speak with Oz Scholars Academy</h2>
+      <p style="color:var(--ink-soft); margin-top:.5rem;">Not sure which program, subject or lesson format is right? Book a quick 30-minute call and we’ll help you choose the best next step.</p>
+    </div>
+    <div class="reveal card" style="padding:1rem; overflow:hidden;">
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/ozscholarsacademy/30min?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <!-- Calendly inline widget end -->
+    </div>
+  </div>
+</section>
 
 <!-- OTHER CONTACT -->
 <section class="section" style="background:#fff; border-block:1px solid var(--line);">
