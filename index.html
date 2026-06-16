@@ -1,675 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  
-  <title>Oz Scholars Academy | Academic Success, Engineered</title>
-  <link rel="icon" type="image/png" href="assets/logo.png?v=2">
-  <meta name="description" content="Online academic coaching for ambitious students, with a free first lesson, personalised learning plans, weekly progress tracking, and specialist programs for exam preparation.">
-  <meta name="keywords" content="tutoring Sydney, ATAR tutoring, selective school prep, maths tutoring, English tutoring, data-driven tutoring, Oz Scholars Academy" />
-  <link rel="canonical" href="https://ozscholarsacademy.com.au/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Oz Scholars Academy | Academic Success, Engineered" />
-  <meta property="og:description" content="Online academic coaching with a free first lesson, structured programs, progress tracking, and personalised support for ambitious students." />
-  <meta property="og:image" content="assets/logo.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Oz Scholars Academy | Better marks. Real confidence. Future-ready skills.</title>
+<meta name="description" content="Oz Scholars Academy is an online student growth system for Years 3–12 — holiday masterclasses, a small-group accelerator, private coaching, and project-based tech labs, all tracked week by week. Start with a free first lesson." />
+<link rel="canonical" href="https://ozscholarsacademy.com.au/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Oz Scholars Academy | Not tutoring — a complete academic growth system" />
+<meta property="og:description" content="Holiday masterclasses, a small-group accelerator, private coaching, and future-skills tech labs. Free first lesson and a clear learning plan." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="assets/logo.png" type="image/png" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { corePlugins: { preflight: false }, theme: { extend: {
+    colors: { ink:'#16151c', paper:'#faf7f0', brand:{DEFAULT:'#241f57',600:'#332c7a',100:'#ecebf6'}, marker:'#ffd23f', electric:{DEFAULT:'#2f6bff',dark:'#1f4fcc'} },
+    fontFamily: { display:['Sora','sans-serif'], body:['"Plus Jakarta Sans"','sans-serif'], mono:['"JetBrains Mono"','monospace'] }
+  }}};
+</script>
+<link rel="stylesheet" href="styles.css" />
 </head>
-<body class="min-h-screen bg-[#FAFAFA]">
+<body>
+<div id="scroll-progress"></div>
 
-  
-  <div id="scroll-progress"></div>
+<!-- ===================== NAVBAR ===================== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand-logo" aria-label="Oz Scholars Academy home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">Oz Scholars Academy</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="programs.html">Programs</a>
+      <a class="nav-link" href="tech-labs.html">Tech Labs</a>
+      <a class="nav-link" href="referral.html">Partners</a>
+      <a class="nav-link" href="work-with-us.html">Careers</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="btn btn-primary nav-cta" href="contact.html">Book a free lesson</a>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#16151c" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu">
+    <div class="mm-inner">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="programs.html">Programs</a>
+      <a class="nav-link" href="tech-labs.html">Tech Labs</a>
+      <a class="nav-link" href="referral.html">Partners</a>
+      <a class="nav-link" href="work-with-us.html">Careers</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="contact.html">Book a free lesson</a>
+    </div>
+  </div>
+</nav>
 
-  
-  <nav class="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur-sm px-6 py-3">
-    <div class="mx-auto max-w-7xl">
-      <div class="flex items-center justify-between gap-3">
-        <a href="#about" class="flex items-center gap-3">
-          
-          <div class="flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg border-2 border-[#FFD700]">
-            <img src="assets/logo.png" alt="Oz Scholars Academy" class="h-full w-full object-cover" />
+<!-- ===================== HERO ===================== -->
+<header class="section dotgrid" style="padding-top:clamp(3rem,6vw,5rem);">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="tag tag-marker" style="margin-bottom:1.1rem;">Online academy · Years 3–12</span>
+      <h1 style="font-size:clamp(2.4rem,5.2vw,3.7rem); margin-bottom:1.1rem;">
+        Better marks. Real confidence.<br><span class="hl-draw">Future-ready skills.</span>
+      </h1>
+      <p style="font-size:1.12rem; color:var(--ink-soft); max-width:34rem; margin-bottom:1.6rem;">
+        Oz Scholars Academy isn't tutoring — it's a structured growth system. Holiday masterclasses, a small-group accelerator, private coaching, and project-based tech labs, all tracked week by week so you can actually <em>see</em> the progress.
+      </p>
+      <div style="display:flex; gap:.8rem; flex-wrap:wrap; margin-bottom:1.6rem;">
+        <a href="contact.html" class="btn btn-primary btn-lg">Book a free first lesson</a>
+        <a href="programs.html" class="btn btn-outline btn-lg">See the programs</a>
+      </div>
+      <div class="mono" style="font-size:.78rem; letter-spacing:.04em; color:var(--ink-soft); display:flex; flex-wrap:wrap; gap:1rem;">
+        <span>✓ Free diagnostic + learning plan</span>
+        <span>✓ Class caps of 5</span>
+        <span>✓ Weekly parent updates</span>
+        <span>✓ No lock-in</span>
+      </div>
+    </div>
+
+    <!-- Hero card: the pathway, at a glance -->
+    <div class="reveal" style="transition-delay:.1s;">
+      <div class="card" style="padding:1.5rem;">
+        <div class="eyebrow" style="margin-bottom:1rem;">Your growth pathway</div>
+        <div style="display:grid; gap:.7rem;">
+          <div class="panel-paper" style="padding:.9rem 1rem; display:flex; justify-content:space-between; align-items:center;">
+            <div><strong>Holiday Masterclasses</strong><div style="font-size:.85rem; color:var(--ink-soft);">Short, sharp, result by the last day</div></div>
+            <span class="mono" style="font-size:.78rem; color:var(--brand);">START</span>
           </div>
-          <span class="text-lg font-bold text-black">Oz Scholars Academy</span>
+          <div class="panel-paper" style="padding:.9rem 1rem; display:flex; justify-content:space-between; align-items:center;">
+            <div><strong>Group Accelerator</strong><div style="font-size:.85rem; color:var(--ink-soft);">8 weeks, small cohort, full system</div></div>
+            <span class="mono" style="font-size:.78rem; color:var(--brand);">CORE</span>
+          </div>
+          <div style="padding:.95rem 1rem; border-radius:14px; background:var(--brand); color:#fff; display:flex; justify-content:space-between; align-items:center; box-shadow:var(--shadow-md);">
+            <div><strong>Accelerator&nbsp;Plus</strong><div style="font-size:.85rem; color:#ffe7ee;">Group + private support</div></div>
+            <span class="mono" style="font-size:.72rem; background:var(--marker); color:var(--ink); padding:.25rem .5rem; border-radius:999px; font-weight:700;">BEST VALUE</span>
+          </div>
+          <div class="panel-paper" style="padding:.9rem 1rem; display:flex; justify-content:space-between; align-items:center;">
+            <div><strong>Private Coaching</strong><div style="font-size:.85rem; color:var(--ink-soft);">1:1, fully personalised</div></div>
+            <span class="mono" style="font-size:.78rem; color:var(--brand);">PREMIUM</span>
+          </div>
+        </div>
+        <a href="programs.html" style="display:inline-flex; align-items:center; gap:.4rem; margin-top:1.1rem; font-weight:700; color:var(--brand); text-decoration:none;">
+          Compare all programs
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-
-        
-        <div class="hidden items-center gap-7 md:flex">
-          <a href="#system" class="text-sm font-semibold text-gray-600 transition-colors hover:text-[#0080FF]">System</a>
-          <a href="#pricing" class="text-sm font-semibold text-gray-600 transition-colors hover:text-[#0080FF]">Programs</a>
-          <a href="#faq" class="text-sm font-semibold text-gray-600 transition-colors hover:text-[#0080FF]">FAQ</a>
-          <a href="#contact" class="text-sm font-semibold text-gray-600 transition-colors hover:text-[#0080FF]">Contact</a>
-          <a href="#booking" class="rounded-xl bg-[#FF0040] px-5 py-2 text-sm font-bold text-white shadow-md transition-all hover:scale-105 hover:bg-[#FF3366]">Book a Call</a>
-        </div>
-
-        
-        <button id="menu-btn" aria-label="Open menu" class="md:hidden text-black">
-          <i data-lucide="menu" class="h-7 w-7"></i>
-        </button>
       </div>
+    </div>
+  </div>
+</header>
 
-      
-      <div id="mobile-menu" class="md:hidden">
-        <div class="flex flex-col gap-1 pt-3">
-          <a href="#system" class="rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100">System</a>
-          <a href="#pricing" class="rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100">Programs</a>
-          <a href="#faq" class="rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100">FAQ</a>
-          <a href="#contact" class="rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-100">Contact</a>
-          <a href="#booking" class="mt-1 rounded-lg bg-[#FF0040] px-3 py-2 text-center text-sm font-bold text-white">Book a Call</a>
+<!-- ===================== PROBLEM REFRAME ===================== -->
+<section class="section" style="background:#fff; border-block:1px solid var(--line);">
+  <div class="wrap">
+    <div class="reveal" style="max-width:42rem; margin-bottom:2.6rem;">
+      <span class="eyebrow">Why we're different</span>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.5rem); margin:.6rem 0 .8rem;">Most tutoring is a worksheet and a weekly explanation.</h2>
+      <p style="color:var(--ink-soft); font-size:1.06rem;">That's why progress feels invisible. We swapped "more hours" for a <span class="hl">system</span> — diagnose the real gaps, build a weekly plan, and prove the improvement to you in writing.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal">
+        <div class="tag" style="margin-bottom:.9rem;">The usual way</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.5rem;">Random hours</h3>
+        <p style="color:var(--ink-soft); font-size:.96rem;">A tutor turns up, explains the homework, leaves. No diagnosis, no plan, no way to tell if it's working.</p>
+      </div>
+      <div class="card reveal" style="transition-delay:.08s;">
+        <div class="tag" style="margin-bottom:.9rem;">The usual way</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.5rem;">Vague "progress"</h3>
+        <p style="color:var(--ink-soft); font-size:.96rem;">"They're going well!" — but no checkpoints, no quizzes, nothing concrete a parent can actually see.</p>
+      </div>
+      <div class="card reveal" style="transition-delay:.16s; border-color:var(--brand); box-shadow:var(--shadow-md);">
+        <div class="tag tag-marker" style="margin-bottom:.9rem;">The Oz Scholars way</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.5rem;">A tracked system</h3>
+        <p style="color:var(--ink-soft); font-size:.96rem;">Diagnostic, weekly plan, homework, mini-quizzes, and a parent report. You see exactly what improved and what's next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE METHOD (real sequence -> numbered) ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center; max-width:40rem; margin:0 auto 2.8rem;">
+      <span class="eyebrow">Academic success, engineered</span>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.5rem); margin:.6rem 0 .6rem;">The Oz Scholars Method</h2>
+      <p style="color:var(--ink-soft); font-size:1.06rem;">The same five steps run through every program — that's what turns "lessons" into measurable growth.</p>
+    </div>
+    <div class="grid grid-5">
+      <div class="card-flat reveal"><div class="step-num">01</div><h3 style="font-size:1.05rem; margin:.9rem 0 .4rem;">Diagnose</h3><p style="font-size:.92rem; color:var(--ink-soft);">A free assessment pinpoints the exact gaps — not guesswork.</p></div>
+      <div class="card-flat reveal" style="transition-delay:.06s;"><div class="step-num">02</div><h3 style="font-size:1.05rem; margin:.9rem 0 .4rem;">Plan</h3><p style="font-size:.92rem; color:var(--ink-soft);">A personalised weekly learning plan with clear targets.</p></div>
+      <div class="card-flat reveal" style="transition-delay:.12s;"><div class="step-num">03</div><h3 style="font-size:1.05rem; margin:.9rem 0 .4rem;">Build</h3><p style="font-size:.92rem; color:var(--ink-soft);">Live lessons + homework that rebuild the foundations.</p></div>
+      <div class="card-flat reveal" style="transition-delay:.18s;"><div class="step-num">04</div><h3 style="font-size:1.05rem; margin:.9rem 0 .4rem;">Track</h3><p style="font-size:.92rem; color:var(--ink-soft);">Weekly mini-quizzes and a mistake tracker catch what slips.</p></div>
+      <div class="card-flat reveal" style="transition-delay:.24s;"><div class="step-num">05</div><h3 style="font-size:1.05rem; margin:.9rem 0 .4rem;">Prove</h3><p style="font-size:.92rem; color:var(--ink-soft);">A parent report shows what improved — in writing.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PATHWAY OVERVIEW ===================== -->
+<section class="section" style="background:#fff; border-block:1px solid var(--line);">
+  <div class="wrap">
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1rem; margin-bottom:2.4rem;">
+      <div style="max-width:38rem;">
+        <span class="eyebrow">Choose your pathway</span>
+        <h2 style="font-size:clamp(1.8rem,3.6vw,2.5rem); margin:.6rem 0;">Four programs, one promise</h2>
+        <p style="color:var(--ink-soft); font-size:1.06rem;">Start anywhere. Each program shares the same method — pick the level of support that fits right now.</p>
+      </div>
+      <a href="programs.html" class="btn btn-ghost">Full details & pricing</a>
+    </div>
+
+    <div class="grid grid-4">
+      <div class="card reveal">
+        <div class="tag" style="margin-bottom:.9rem;">Holidays</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.4rem;">Holiday Masterclasses</h3>
+        <p style="font-size:.94rem; color:var(--ink-soft); margin-bottom:1rem;">Short sprints that fix gaps or prep for exams — with a real result by the last day.</p>
+        <div class="price"><span class="from">from</span> $189</div>
+      </div>
+      <div class="card reveal" style="transition-delay:.06s;">
+        <div class="tag" style="margin-bottom:.9rem;">Core</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.4rem;">Group Accelerator</h3>
+        <p style="font-size:.94rem; color:var(--ink-soft); margin-bottom:1rem;">8-week small-group program (max 5) with the full diagnose-to-prove system.</p>
+        <div class="price"><span class="from">from</span> $449</div>
+      </div>
+      <div class="card reveal" style="transition-delay:.12s; position:relative; border-color:var(--brand); box-shadow:var(--shadow-md);">
+        <span class="pill-best">Best value</span>
+        <div class="tag tag-marker" style="margin-bottom:.9rem;">Group + 1:1</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.4rem;">Accelerator Plus</h3>
+        <p style="font-size:.94rem; color:var(--ink-soft); margin-bottom:1rem;">The group program plus private sessions — the structure of a cohort with the attention of 1:1.</p>
+        <div class="price"><span class="from">from</span> $649</div>
+      </div>
+      <div class="card reveal" style="transition-delay:.18s;">
+        <div class="tag" style="margin-bottom:.9rem;">Premium</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.4rem;">Private Coaching</h3>
+        <p style="font-size:.94rem; color:var(--ink-soft); margin-bottom:1rem;">Fully personalised 1:1 — for catching up fast or pushing for the top band.</p>
+        <div class="price"><span class="from">from</span> $65<span style="font-size:.7em; font-weight:600;">/hr</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TECH TEASER ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="reveal split-6040" style="background:var(--dark); border-radius:var(--radius-lg); overflow:hidden;">
+      <div style="padding:clamp(2rem,4vw,3.2rem);">
+        <span class="tag tag-electric" style="margin-bottom:1rem;">Future Skills Labs</span>
+        <h2 style="color:#fff; font-size:clamp(1.7rem,3.4vw,2.4rem); margin-bottom:.8rem;">The things school doesn't teach — built into something real.</h2>
+        <p style="color:#ffe7ee; font-size:1.05rem; max-width:32rem; margin-bottom:1.4rem;">Short 6–8 lesson labs where students ship an actual project: a Python game, a live website, an AI chatbot. They finish with something to show — and a certificate to prove it.</p>
+        <a href="tech-labs.html" class="btn btn-electric btn-lg">Explore the labs</a>
+      </div>
+      <div class="dotgrid" style="background-color:var(--dark); display:flex; align-items:center; justify-content:center; padding:2rem;">
+        <div class="mono" style="color:var(--marker); font-size:.85rem; line-height:1.9; background:rgba(0,0,0,.25); border:1px solid rgba(255,255,255,.12); border-radius:12px; padding:1.1rem 1.3rem;">
+          <span style="color:#8aa0ff;">def</span> level_up(student):<br>
+          &nbsp;&nbsp;skills = [<span style="color:#fff;">"code"</span>, <span style="color:#fff;">"AI"</span>]<br>
+          &nbsp;&nbsp;<span style="color:#8aa0ff;">return</span> ship(project)<br>
+          <span style="color:#6f6aa3;"># a real thing, every time</span>
         </div>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  
-  <section id="about" class="relative overflow-hidden bg-gradient-to-br from-[#FAFAFA] via-white to-[#F5F5F5] px-6 py-12 md:py-16">
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(to right, #000 1px, transparent 1px), linear-gradient(to bottom, #000 1px, transparent 1px); background-size: 24px 24px;"></div>
-
-    <div class="relative mx-auto max-w-7xl">
-      <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
-        <div class="space-y-6 reveal">
-          <h2 class="text-5xl font-bold leading-tight tracking-tight text-black md:text-6xl lg:text-7xl">
-            Academic Success,<br />
-            <span class="bg-gradient-to-r from-[#FFD700] to-[#FFA500] bg-clip-text text-transparent">Engineered.</span>
-          </h2>
-          <p class="text-xl text-gray-700 md:text-2xl">
-            Online programs for ambitious students who want sharper marks, stronger confidence, and a clear weekly system for improvement.
-          </p>
-          <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-            <button data-scroll="booking" class="group relative overflow-hidden rounded-xl bg-[#FF0040] px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl">
-              <span class="relative z-10 flex items-center justify-center gap-2">
-                Claim Your Free First Lesson
-                <i data-lucide="arrow-right" class="h-5 w-5 transition-transform group-hover:translate-x-1"></i>
-              </span>
-              <div class="absolute inset-0 bg-gradient-to-r from-[#FF0040] to-[#FF3366] opacity-0 transition-opacity group-hover:opacity-100"></div>
-            </button>
-          </div>
-          
-          <div class="grid grid-cols-3 gap-6 pt-8">
-            <div class="rounded-xl bg-white p-4 shadow-md">
-              <div class="text-3xl font-bold text-[#0080FF]">97+</div>
-              <div class="text-sm text-gray-600">ATAR Tutors</div>
-            </div>
-            <div class="rounded-xl bg-white p-4 shadow-md">
-              <div class="text-3xl font-bold text-[#00D66B]">3 Yrs</div>
-              <div class="text-sm text-gray-600">Teaching Experience</div>
-            </div>
-            <div class="rounded-xl bg-white p-4 shadow-md">
-              <div class="text-3xl font-bold text-[#FFD700]">2026</div>
-              <div class="text-sm text-gray-600">Est. Founded</div>
-            </div>
-          </div>
-        </div>
-
-        
-        <div class="relative space-y-4 reveal">
-          <div class="inline-flex items-center gap-2 rounded-full border-2 border-gray-200 bg-white px-4 py-2 shadow-sm">
-            <div class="relative flex items-center">
-              <div class="h-2 w-2 animate-pulse rounded-full bg-[#00D66B]"></div>
-              <div class="absolute h-2 w-2 animate-ping rounded-full bg-[#00D66B]"></div>
-            </div>
-            <span class="text-sm text-gray-700">Founded by a Software Engineering Student</span>
-          </div>
-
-          <div class="absolute -inset-4 rounded-2xl bg-gradient-to-r from-[#0080FF]/20 via-[#FFD700]/20 to-[#00D66B]/20 opacity-75 blur-3xl"></div>
-          <div class="relative rounded-2xl bg-white p-6 shadow-2xl">
-            <div class="mb-4 flex items-center gap-2 rounded-lg bg-gray-50 px-3 py-2">
-              <div class="h-2 w-2 rounded-full bg-[#FF0040]"></div>
-              <div class="h-2 w-2 rounded-full bg-[#FFD700]"></div>
-              <div class="h-2 w-2 rounded-full bg-[#00D66B]"></div>
-              <div class="ml-2 text-xs text-gray-500">Dashboard</div>
-            </div>
-
-            <div class="space-y-4">
-              
-              <div class="rounded-lg border-2 border-[#0080FF] bg-gradient-to-r from-[#0080FF]/5 to-transparent p-4">
-                <div class="mb-2 flex items-center justify-between">
-                  <span class="text-sm font-semibold text-gray-700">This Week</span>
-                  <span class="text-sm font-bold text-[#0080FF]">12/15 Tasks</span>
-                </div>
-                <div class="relative h-3 w-full overflow-hidden rounded-full bg-gray-200">
-                  <div class="absolute h-3 w-[80%] animate-pulse rounded-full bg-gradient-to-r from-[#0080FF] to-[#00D66B]"></div>
-                </div>
-                <div class="mt-2 flex gap-1" id="hero-task-grid"></div>
-              </div>
-
-              
-              <div class="rounded-lg border-2 border-[#00D66B] bg-[#00D66B]/5 p-4">
-                <div class="mb-3 text-sm font-semibold text-gray-700">Recent Achievements</div>
-                <div class="flex gap-2">
-                  <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#FFD700] to-[#FF8C00] shadow-lg"><span class="text-lg">🏆</span></div>
-                  <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#0080FF] to-[#00D66B] shadow-lg"><span class="text-lg">⭐</span></div>
-                  <div class="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#FF0040] to-[#FF3366] shadow-lg"><span class="text-lg">🔥</span></div>
-                  <div class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-dashed border-gray-300 bg-gray-50"><span class="text-lg text-gray-400">+</span></div>
-                </div>
-              </div>
-
-              
-              <div class="rounded-lg border-2 border-[#FFD700] bg-gradient-to-r from-[#FFD700]/5 to-transparent p-4">
-                <div class="mb-2 text-sm font-semibold text-gray-700">Next Online Session</div>
-                <div class="flex items-center justify-between">
-                  <div>
-                    <div class="text-xl font-bold text-[#FF8C00]">Mathematics</div>
-                    <div class="text-xs text-gray-600">Tomorrow at 4:00 PM</div>
-                  </div>
-                  <div class="rounded-lg bg-[#FFD700] px-3 py-2 text-center">
-                    <div class="text-lg font-bold text-black">23h</div>
-                    <div class="text-xs text-black/70">away</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- ===================== PARENT PROGRESS + REFERRAL HOOK ===================== -->
+<section class="section" style="background:#fff; border-block:1px solid var(--line);">
+  <div class="wrap split">
+    <div class="reveal panel-tint" style="padding:2rem;">
+      <span class="eyebrow">For parents</span>
+      <h3 style="font-size:1.5rem; margin:.5rem 0 .8rem;">You're never left guessing</h3>
+      <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Weekly progress updates in plain language</div>
+      <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> A mistake tracker so weak spots don't repeat</div>
+      <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> A clear next step recommended every term</div>
+      <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> No lock-in contracts — stay because it works</div>
     </div>
-  </section>
-
-  
-  <section class="bg-gradient-to-br from-gray-50 via-white to-gray-50 px-6 py-20 md:py-32">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-16 text-center reveal">
-        <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-[#FFD700]/10 px-4 py-2 text-sm font-semibold text-[#FF8C00]">
-          <i data-lucide="rotate-ccw" class="h-4 w-4"></i> Our Proven Process
-        </div>
-        <h2 class="mb-4 text-4xl font-bold text-black md:text-5xl">The <span class="text-[#FFD700]">5-Step Score Boost</span> System</h2>
-        <p class="mx-auto max-w-2xl text-xl text-gray-600">Engineering academic improvement through systematic, data-driven iteration.</p>
-      </div>
-
-      <div class="relative space-y-8">
-        <div class="absolute left-8 top-12 hidden h-[calc(100%-96px)] w-1 bg-gradient-to-b from-[#0080FF] via-[#FFD700] to-[#9333EA] opacity-20 md:block"></div>
-        <div id="process-steps"></div>
-      </div>
-
-      <div class="mt-16 grid gap-6 md:grid-cols-3">
-        <div class="rounded-2xl border-2 border-[#0080FF] bg-gradient-to-br from-[#0080FF]/5 to-transparent p-6 text-center reveal">
-          <div class="mb-2 text-4xl font-bold text-[#0080FF]">Continuous</div>
-          <div class="text-gray-700">No guesswork, only data-driven decisions</div>
-        </div>
-        <div class="rounded-2xl border-2 border-[#FFD700] bg-gradient-to-br from-[#FFD700]/5 to-transparent p-6 text-center reveal">
-          <div class="mb-2 text-4xl font-bold text-[#FF8C00]">Measurable</div>
-          <div class="text-gray-700">Track every metric, see every improvement</div>
-        </div>
-        <div class="rounded-2xl border-2 border-[#00D66B] bg-gradient-to-br from-[#00D66B]/5 to-transparent p-6 text-center reveal">
-          <div class="mb-2 text-4xl font-bold text-[#00D66B]">Optimised</div>
-          <div class="text-gray-700">Iterate and improve week after week</div>
-        </div>
-      </div>
-
-      <div class="mt-12 text-center">
-        <p class="mb-6 text-xl text-gray-700">Start with a free first lesson and leave with a clear learning plan.</p>
-        <button data-scroll="contact" class="rounded-xl bg-[#FF0040] px-10 py-4 text-lg font-bold text-white shadow-2xl transition-all hover:scale-105 hover:bg-[#FF3366]">Book Your Free First Lesson</button>
-      </div>
+    <div class="reveal" style="transition-delay:.08s; padding:2rem; border-radius:var(--radius-lg); border:1.5px dashed var(--brand); background:var(--paper);">
+      <span class="tag tag-marker" style="margin-bottom:.9rem;">Earn with us</span>
+      <h3 style="font-size:1.5rem; margin-bottom:.6rem;">Refer a family — <span class="hl">give $50, get $50</span></h3>
+      <p style="color:var(--ink-soft); margin-bottom:1.2rem;">Love the results? Send a friend. When they finish their first paid month, you both get $50 credit. Know a lot of families? Become an Ambassador and earn per enrolment.</p>
+      <a href="referral.html" class="btn btn-primary">Become a partner</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  
-  <section id="system" class="bg-white px-6 py-16 md:py-24">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-16 text-center reveal">
-        <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-[#FFD700]/10 px-4 py-2 text-sm font-semibold text-[#FF8C00]">
-          <i data-lucide="activity" class="h-4 w-4"></i> The System
-        </div>
-        <h2 class="mb-4 text-4xl font-bold text-black md:text-5xl">Study Tracking &amp; Scheduling</h2>
-        <p class="mx-auto max-w-2xl text-xl text-gray-600">An online learning system that combines expert teaching, weekly tracking, clear homework, parent updates, and measurable goals.</p>
-      </div>
-
-      <div class="rounded-2xl border-2 border-gray-200 bg-gradient-to-br from-gray-50 to-white p-6 shadow-2xl md:p-8 reveal">
-        <div class="mb-6 flex flex-wrap items-center justify-between gap-4 rounded-xl bg-[#0080FF] p-4 text-white">
-          <div>
-            <h3 class="text-2xl font-bold">Student Dashboard</h3>
-            <p class="text-sm text-blue-100">Real-time monitoring &amp; analytics</p>
-          </div>
-          <div class="flex items-center gap-2 rounded-lg bg-white/20 px-4 py-2 backdrop-blur">
-            <div class="h-3 w-3 animate-pulse rounded-full bg-[#00FF00]"></div>
-            <span class="text-sm font-semibold">Live</span>
-          </div>
-        </div>
-
-        <div class="grid gap-6 lg:grid-cols-3">
-          
-          <div class="space-y-4">
-            <div class="rounded-xl border-2 border-[#0080FF] bg-white p-5 shadow-lg">
-              <div class="mb-2 flex items-center justify-between">
-                <div class="flex items-center gap-2"><i data-lucide="bar-chart-3" class="h-5 w-5 text-[#0080FF]"></i><span class="font-semibold text-gray-700">Weekly Hours</span></div>
-                <span class="text-2xl font-bold text-[#0080FF]">18.5</span>
-              </div>
-              <div class="h-2 w-full rounded-full bg-gray-200"><div class="h-2 w-[92%] rounded-full bg-[#0080FF]"></div></div>
-              <p class="mt-2 text-xs text-gray-500">92% of weekly goal</p>
-            </div>
-            <div class="rounded-xl border-2 border-[#00D66B] bg-white p-5 shadow-lg">
-              <div class="mb-2 flex items-center justify-between">
-                <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#00D66B]"></i><span class="font-semibold text-gray-700">Completion</span></div>
-                <span class="text-2xl font-bold text-[#00D66B]">94%</span>
-              </div>
-              <div class="h-2 w-full rounded-full bg-gray-200"><div class="h-2 w-[94%] rounded-full bg-[#00D66B]"></div></div>
-              <p class="mt-2 text-xs text-gray-500">Above target threshold</p>
-            </div>
-            <div class="rounded-xl border-2 border-[#FFD700] bg-white p-5 shadow-lg">
-              <div class="mb-2 flex items-center justify-between">
-                <div class="flex items-center gap-2"><i data-lucide="target" class="h-5 w-5 text-[#FF8C00]"></i><span class="font-semibold text-gray-700">Focus Score</span></div>
-                <span class="text-2xl font-bold text-[#FF8C00]">8.7</span>
-              </div>
-              <div class="h-2 w-full rounded-full bg-gray-200"><div class="h-2 w-[87%] rounded-full bg-[#FFD700]"></div></div>
-              <p class="mt-2 text-xs text-gray-500">Excellent concentration</p>
-            </div>
-          </div>
-
-          
-          <div class="space-y-4">
-            <div class="rounded-xl border-2 border-gray-300 bg-white p-5 shadow-lg">
-              <div class="mb-4 flex items-center gap-2"><i data-lucide="calendar" class="h-5 w-5 text-[#0080FF]"></i><h4 class="font-bold text-gray-900">This Week's Online Plan</h4></div>
-              <div class="space-y-3">
-                <div class="flex items-start gap-3 rounded-lg border border-[#0080FF]/30 bg-[#0080FF]/5 p-3">
-                  <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#0080FF] text-sm font-bold text-white">MON</div>
-                  <div class="flex-1"><p class="font-semibold text-gray-900">Mathematics</p><p class="text-sm text-gray-600">4:00 PM - 5:30 PM</p></div>
-                </div>
-                <div class="flex items-start gap-3 rounded-lg border border-[#00D66B]/30 bg-[#00D66B]/5 p-3">
-                  <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#00D66B] text-sm font-bold text-white">WED</div>
-                  <div class="flex-1"><p class="font-semibold text-gray-900">Physics</p><p class="text-sm text-gray-600">3:30 PM - 5:00 PM</p></div>
-                </div>
-                <div class="flex items-start gap-3 rounded-lg border border-[#FF8C00]/30 bg-[#FFD700]/5 p-3">
-                  <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-[#FF8C00] text-sm font-bold text-white">FRI</div>
-                  <div class="flex-1"><p class="font-semibold text-gray-900">Chemistry</p><p class="text-sm text-gray-600">5:00 PM - 6:30 PM</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="space-y-4">
-            <div class="rounded-xl border-2 border-gray-300 bg-white p-5 shadow-lg">
-              <div class="mb-4 flex items-center gap-2"><i data-lucide="activity" class="h-5 w-5 text-[#FF0040]"></i><h4 class="font-bold text-gray-900">Recent Activity</h4></div>
-              <div class="space-y-4">
-                <div class="flex items-start gap-3">
-                  <div class="mt-1 h-8 w-8 rounded-full bg-[#00D66B]/20 flex items-center justify-center"><i data-lucide="check-circle-2" class="h-4 w-4 text-[#00D66B]"></i></div>
-                  <div><p class="text-sm font-semibold text-gray-900">Completed assignment</p><p class="text-xs text-gray-500">2 hours ago</p></div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <div class="mt-1 h-8 w-8 rounded-full bg-[#0080FF]/20 flex items-center justify-center"><i data-lucide="clock" class="h-4 w-4 text-[#0080FF]"></i></div>
-                  <div><p class="text-sm font-semibold text-gray-900">Session scheduled</p><p class="text-xs text-gray-500">5 hours ago</p></div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <div class="mt-1 h-8 w-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center"><i data-lucide="target" class="h-4 w-4 text-[#FF8C00]"></i></div>
-                  <div><p class="text-sm font-semibold text-gray-900">Goal milestone reached</p><p class="text-xs text-gray-500">1 day ago</p></div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <div class="mt-1 h-8 w-8 rounded-full bg-[#FF0040]/20 flex items-center justify-center"><i data-lucide="bar-chart-3" class="h-4 w-4 text-[#FF0040]"></i></div>
-                  <div><p class="text-sm font-semibold text-gray-900">Progress report generated</p><p class="text-xs text-gray-500">2 days ago</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-        <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
-          <div class="rounded-lg bg-gradient-to-br from-[#0080FF]/10 to-[#0080FF]/5 p-4 text-center">
-            <div class="mx-auto mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-[#0080FF]"><i data-lucide="activity" class="h-6 w-6 text-white"></i></div>
-            <p class="text-sm font-semibold text-gray-900">Live Tracking</p>
-          </div>
-          <div class="rounded-lg bg-gradient-to-br from-[#00D66B]/10 to-[#00D66B]/5 p-4 text-center">
-            <div class="mx-auto mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-[#00D66B]"><i data-lucide="check-circle-2" class="h-6 w-6 text-white"></i></div>
-            <p class="text-sm font-semibold text-gray-900">Auto Validation</p>
-          </div>
-          <div class="rounded-lg bg-gradient-to-br from-[#FFD700]/10 to-[#FFD700]/5 p-4 text-center">
-            <div class="mx-auto mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-[#FF8C00]"><i data-lucide="calendar" class="h-6 w-6 text-white"></i></div>
-            <p class="text-sm font-semibold text-gray-900">Smart Scheduling</p>
-          </div>
-          <div class="rounded-lg bg-gradient-to-br from-[#FF0040]/10 to-[#FF0040]/5 p-4 text-center">
-            <div class="mx-auto mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-[#FF0040]"><i data-lucide="bar-chart-3" class="h-6 w-6 text-white"></i></div>
-            <p class="text-sm font-semibold text-gray-900">Analytics</p>
-          </div>
-        </div>
-      </div>
+<!-- ===================== FAQ ===================== -->
+<section class="section">
+  <div class="wrap" style="max-width:48rem;">
+    <div class="reveal" style="text-align:center; margin-bottom:2rem;">
+      <span class="eyebrow">Good to know</span>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.4rem); margin-top:.5rem;">Questions parents ask</h2>
     </div>
-  </section>
-
-  
-  <section class="bg-gradient-to-br from-gray-50 via-white to-gray-50 px-6 py-16 md:py-24">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-16 text-center reveal">
-        <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-[#FFD700]/10 px-4 py-2 text-sm font-semibold text-[#FF8C00]">
-          <i data-lucide="trending-up" class="h-4 w-4"></i> The Difference
-        </div>
-        <h2 class="mb-4 text-4xl font-bold text-black md:text-5xl">The "Effective School" Advantage</h2>
-        <p class="mx-auto max-w-2xl text-xl text-gray-600">Traditional education vs. systems-optimised learning. See the difference.</p>
-      </div>
-
-      <div class="grid gap-8 lg:grid-cols-2">
-        
-        <div class="relative overflow-hidden rounded-2xl border-2 border-red-200 bg-white shadow-xl reveal">
-          <div class="bg-gradient-to-r from-red-500 to-red-600 p-6 text-white">
-            <div class="mb-2 flex items-center gap-3">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur"><i data-lucide="trending-down" class="h-6 w-6"></i></div>
-              <div><h3 class="text-2xl font-bold">Traditional School</h3><p class="text-sm text-red-100">Legacy Systems &amp; Bloat</p></div>
-            </div>
-          </div>
-          <div class="p-6">
-            <div class="mb-4 rounded-lg bg-red-50 p-4">
-              <div class="flex items-center gap-2 text-red-700"><i data-lucide="x" class="h-5 w-5"></i><span class="font-semibold">Inefficient Approach</span></div>
-            </div>
-            <div class="space-y-3" id="comparison-traditional"></div>
-            <div class="mt-6 rounded-lg bg-red-100 p-4 text-center"><p class="text-sm font-semibold text-red-800">Results vary, progress is unpredictable</p></div>
-          </div>
-        </div>
-
-        
-        <div class="relative overflow-hidden rounded-2xl border-2 border-green-200 bg-white shadow-xl reveal">
-          <div class="bg-gradient-to-r from-[#00D66B] to-[#00B857] p-6 text-white">
-            <div class="mb-2 flex items-center gap-3">
-              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur"><i data-lucide="trending-up" class="h-6 w-6"></i></div>
-              <div><h3 class="text-2xl font-bold">Oz Scholars Academy</h3><p class="text-sm text-green-100">Systems-Optimised Learning</p></div>
-            </div>
-          </div>
-          <div class="p-6">
-            <div class="mb-4 rounded-lg bg-green-50 p-4">
-              <div class="flex items-center gap-2 text-[#00D66B]"><i data-lucide="check" class="h-5 w-5"></i><span class="font-semibold">Optimised Excellence</span></div>
-            </div>
-            <div class="space-y-3" id="comparison-oz"></div>
-            <div class="mt-6 rounded-lg bg-green-100 p-4 text-center"><p class="text-sm font-semibold text-[#00D66B]">Trackable, measurable, and continuously optimised</p></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-12 grid gap-6 md:grid-cols-3">
-        <div class="rounded-xl bg-gradient-to-br from-[#0080FF]/10 to-[#0080FF]/5 p-6 text-center"><div class="mb-2 text-4xl font-bold text-[#0080FF]">2.3x</div><p class="text-gray-700">Faster Progress</p></div>
-        <div class="rounded-xl bg-gradient-to-br from-[#00D66B]/10 to-[#00D66B]/5 p-6 text-center"><div class="mb-2 text-4xl font-bold text-[#00D66B]">54%</div><p class="text-gray-700">More Retention</p></div>
-        <div class="rounded-xl bg-gradient-to-br from-[#FFD700]/10 to-[#FFD700]/5 p-6 text-center"><div class="mb-2 text-4xl font-bold text-[#FF8C00]">100%</div><p class="text-gray-700">Data-Driven</p></div>
-      </div>
+    <div class="reveal">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Is everything online?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-panel"><p>Yes — all programs run live online, so you're not limited to local tutors and there's no travel. Lessons are interactive and capped at 5 students for group classes.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What year levels do you cover?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-panel"><p>Years 3 to 12 across Maths, English, study skills, exam prep and selective/scholarship foundations — plus the Future Skills Labs for students who want to build real tech projects.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Is the first lesson really free?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-panel"><p>Yes. Your first lesson doubles as a diagnostic — we find the gaps and send you a personalised learning plan, with no obligation to continue.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What's the difference between the Accelerator and Accelerator Plus?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-panel"><p>The Accelerator is the 8-week small-group program. Accelerator Plus adds private 1:1 sessions on top — the structure and motivation of a cohort with personal attention, bundled below the price of buying both separately.</p></div></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  
-  <section class="bg-gradient-to-br from-white via-gray-50 to-white px-6 py-16 md:py-24">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-16 text-center reveal">
-        <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-[#FFD700]/10 px-4 py-2 text-sm font-semibold text-[#FF8C00]">
-          <i data-lucide="quote" class="h-4 w-4"></i> Parent Testimonials
-        </div>
-        <h2 class="mb-4 text-4xl font-bold text-black md:text-5xl">Real Parents, Real Results</h2>
-        <p class="mx-auto max-w-2xl text-xl text-gray-600">Hear from families who switched to a systems-driven approach.</p>
-      </div>
-      <div class="grid gap-8 md:grid-cols-3" id="testimonials-grid"></div>
+<!-- ===================== FINAL CTA ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="background:linear-gradient(135deg,var(--brand),var(--brand-2)); border-radius:var(--radius-lg); padding:clamp(2.2rem,4vw,3.4rem); text-align:center;">
+      <h2 style="color:#fff; font-size:clamp(1.8rem,3.8vw,2.6rem); margin-bottom:.8rem;">Start with a free first lesson.</h2>
+      <p style="color:#ffe7ee; font-size:1.08rem; max-width:34rem; margin:0 auto 1.6rem;">One session, a real diagnosis, and a learning plan you can keep — whether you enrol or not.</p>
+      <a href="contact.html" class="btn btn-marker btn-lg">Book your free lesson</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  
-  <section id="pricing" class="bg-white px-6 py-20 md:py-32">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-16 text-center reveal">
-        <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-[#FFD700]/10 px-4 py-2 text-sm font-semibold text-[#FF8C00]">
-          <i data-lucide="sparkles" class="h-4 w-4"></i> Online Programs
-        </div>
-        <h2 class="mb-4 text-4xl font-bold text-black md:text-5xl">Choose the Right <span class="text-[#FFD700]">Online Path</span></h2>
-        <p class="mx-auto max-w-3xl text-xl text-gray-600">No confusing tiers. Every family starts with a free first lesson, then we recommend the best online program based on the student's goals, current level, and learning style.</p>
-      </div>
-
-      <div class="grid gap-8 lg:grid-cols-3" id="pricing-grid">
-        <div class="group relative overflow-hidden rounded-3xl border-2 border-[#0080FF] bg-gradient-to-br from-[#0080FF]/10 via-white to-white p-8 shadow-xl transition-all hover:-translate-y-2 hover:shadow-2xl">
-          <div class="absolute right-6 top-6 rounded-full bg-[#0080FF] px-4 py-1 text-xs font-bold uppercase tracking-wide text-white">High Demand</div>
-          <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#0080FF] text-white shadow-lg"><i data-lucide="stethoscope" class="h-8 w-8"></i></div>
-          <h3 class="mb-3 text-3xl font-bold text-black">Med Entry Prep</h3>
-          <p class="mb-6 text-gray-600">For students aiming for medicine, dentistry, or health pathways who need structured academic support, interview confidence, and disciplined preparation habits.</p>
-          <div class="mb-6 rounded-2xl bg-[#0080FF]/10 p-4">
-            <div class="text-sm font-semibold text-[#0080FF]">Best for</div>
-            <div class="text-lg font-bold text-gray-900">UCAT foundations, interview skills, study systems, and high performance routines</div>
-          </div>
-          <ul class="mb-8 space-y-3 text-sm text-gray-700">
-            <li class="flex gap-2"><span class="font-bold text-[#00D66B]">✓</span><span>Weekly online coaching with targeted skill building</span></li>
-            <li class="flex gap-2"><span class="font-bold text-[#00D66B]">✓</span><span>Decision making, verbal reasoning, timing, and reflection drills</span></li>
-            <li class="flex gap-2"><span class="font-bold text-[#00D66B]">✓</span><span>Mock interview style practice and feedback loops</span></li>
-            <li class="flex gap-2"><span class="font-bold text-[#00D66B]">✓</span><span>Parent friendly progress updates and next steps</span></li>
-          </ul>
-          <button data-scroll="booking" class="w-full rounded-xl bg-[#0080FF] px-6 py-4 font-bold text-white shadow-lg transition-all hover:scale-[1.02]">Start With a Free First Lesson</button>
-        </div>
-
-        <div class="group relative overflow-hidden rounded-3xl border-2 border-[#FFD700] bg-gradient-to-br from-[#FFD700]/10 via-white to-white p-8 shadow-xl transition-all hover:-translate-y-2 hover:shadow-2xl">
-          <div class="absolute right-6 top-6 rounded-full bg-[#FFD700] px-4 py-1 text-xs font-bold uppercase tracking-wide text-black">Core Program</div>
-          <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#FFD700] text-black shadow-lg"><i data-lucide="rocket" class="h-8 w-8"></i></div>
-          <h3 class="mb-3 text-3xl font-bold text-black">Academic Accelerator</h3>
-          <p class="mb-6 text-gray-600">For students who need stronger marks, better homework habits, clearer explanations, and a weekly learning system that keeps them accountable.</p>
-          <div class="mb-6 rounded-2xl bg-[#FFD700]/20 p-4">
-            <div class="text-sm font-semibold text-[#FF8C00]">Best for</div>
-            <div class="text-lg font-bold text-gray-900">Maths, English, Science, exam preparation, confidence, and catch up support</div>
-          </div>
-          <ul class="mb-8 space-y-3 text-sm text-gray-700">
-            <li class="flex gap-2"><span class="font-bold text-[#00D66B]">✓</span><span>Personalised online lessons matched to school content</span></li>
-            <li class="flex gap-2"><span class="font-bold text-[#00D66B]">✓</span><span>Diagnostic first lesson to find gaps quickly</span></li>
-            <li class="flex gap-2"><span class="font-bold text-[#00D66B]">✓</span><span>Weekly homework, revision checkpoints, and progress tracking</span></li>
-            <li class="flex gap-2"><span class="font-bold text-[#00D66B]">✓</span><span>Clear parent updates so everyone knows the next move</span></li>
-          </ul>
-          <button data-scroll="booking" class="w-full rounded-xl bg-[#FFD700] px-6 py-4 font-bold text-black shadow-lg transition-all hover:scale-[1.02] hover:bg-[#FFA500]">Claim the Free First Lesson</button>
-        </div>
-
-        <div class="group relative overflow-hidden rounded-3xl border-2 border-[#00D66B] bg-gradient-to-br from-[#00D66B]/10 via-white to-white p-8 shadow-xl transition-all hover:-translate-y-2 hover:shadow-2xl">
-          <div class="absolute right-6 top-6 rounded-full bg-[#00D66B] px-4 py-1 text-xs font-bold uppercase tracking-wide text-white">Future Ready</div>
-          <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#00D66B] text-white shadow-lg"><i data-lucide="presentation" class="h-8 w-8"></i></div>
-          <h3 class="mb-3 text-3xl font-bold text-black">Future Ready Skills</h3>
-          <p class="mb-6 text-gray-600">For students who want to stand out beyond marks through communication, public speaking, leadership, project thinking, and study independence.</p>
-          <div class="mb-6 rounded-2xl bg-[#00D66B]/10 p-4">
-            <div class="text-sm font-semibold text-[#00D66B]">Best for</div>
-            <div class="text-lg font-bold text-gray-900">Public speaking, confidence, study planning, portfolio skills, and presentation practice</div>
-          </div>
-          <ul class="mb-8 space-y-3 text-sm text-gray-700">
-            <li class="flex gap-2"><span class="font-bold text-[#00D66B]">✓</span><span>Small online workshops with practical activities</span></li>
-            <li class="flex gap-2"><span class="font-bold text-[#00D66B]">✓</span><span>Presentation practice with structured feedback</span></li>
-            <li class="flex gap-2"><span class="font-bold text-[#00D66B]">✓</span><span>Goal setting, weekly planning, and confidence building</span></li>
-            <li class="flex gap-2"><span class="font-bold text-[#00D66B]">✓</span><span>Optional project based outcomes students can show parents</span></li>
-          </ul>
-          <button data-scroll="booking" class="w-full rounded-xl bg-[#00D66B] px-6 py-4 font-bold text-white shadow-lg transition-all hover:scale-[1.02]">Try the First Lesson Free</button>
-        </div>
-      </div>
-
-      <div class="mt-12 rounded-3xl border-2 border-[#FF0040]/20 bg-gradient-to-br from-[#FF0040]/5 via-white to-[#FFD700]/10 p-8 shadow-xl">
-        <div class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
-          <div>
-            <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-[#FF0040]/10 px-4 py-2 text-sm font-bold text-[#FF0040]"><i data-lucide="gift" class="h-4 w-4"></i> First Lesson Free</div>
-            <h3 class="mb-4 text-3xl font-bold text-black md:text-4xl">Experience the system before committing.</h3>
-            <p class="mb-6 text-lg text-gray-700">The first lesson is free for new families. We use it to understand the student, identify gaps, test the fit, and recommend the right online pathway with clear next steps.</p>
-            <div class="grid gap-4 md:grid-cols-3">
-              <div class="rounded-xl bg-white p-4 shadow"><div class="mb-1 text-2xl font-bold text-[#0080FF]">1</div><p class="text-sm font-semibold text-gray-700">Free online lesson</p></div>
-              <div class="rounded-xl bg-white p-4 shadow"><div class="mb-1 text-2xl font-bold text-[#FFD700]">2</div><p class="text-sm font-semibold text-gray-700">Skill gap diagnosis</p></div>
-              <div class="rounded-xl bg-white p-4 shadow"><div class="mb-1 text-2xl font-bold text-[#00D66B]">3</div><p class="text-sm font-semibold text-gray-700">Recommended plan</p></div>
-            </div>
-          </div>
-          <div class="rounded-2xl bg-black p-6 text-white shadow-2xl">
-            <h4 class="mb-4 text-2xl font-bold text-[#FFD700]">What every program includes</h4>
-            <ul class="space-y-3 text-sm text-gray-200">
-              <li class="flex gap-2"><span class="text-[#00D66B]">✓</span><span>Online delivery only</span></li>
-              <li class="flex gap-2"><span class="text-[#00D66B]">✓</span><span>No lock in contracts</span></li>
-              <li class="flex gap-2"><span class="text-[#00D66B]">✓</span><span>Weekly progress tracking</span></li>
-              <li class="flex gap-2"><span class="text-[#00D66B]">✓</span><span>Clear homework and revision plan</span></li>
-              <li class="flex gap-2"><span class="text-[#00D66B]">✓</span><span>Parent updates after key milestones</span></li>
-            </ul>
-            <button data-scroll="booking" class="mt-6 w-full rounded-xl bg-[#FF0040] px-6 py-4 font-bold text-white shadow-lg transition-all hover:scale-[1.02] hover:bg-[#FF3366]">Book the Free First Lesson</button>
-          </div>
-        </div>
-      </div>
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="brand-logo" style="margin-bottom:.9rem;">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Oz Scholars Academy</span>
+      </a>
+      <p class="footer-tagline"><strong>Better Marks.</strong><span>Better Confidence.</span><span>Better Future.</span></p>
     </div>
-  </section>
-
-  <section class="bg-white px-6 py-20 md:py-32" id="faq">
-    <div class="mx-auto max-w-4xl">
-      <div class="mb-16 text-center reveal">
-        <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-[#FFD700]/10 px-4 py-2 text-sm font-semibold text-[#FF8C00]">
-          <i data-lucide="help-circle" class="h-4 w-4"></i> Frequently Asked Questions
-        </div>
-        <h2 class="mb-4 text-4xl font-bold text-black md:text-5xl">Everything You Need to Know</h2>
-        <p class="text-xl text-gray-600">Got questions? We've got answers.</p>
-      </div>
-
-      <div class="space-y-4" id="faq-list"></div>
-
-      <div class="mt-12 rounded-2xl border-2 border-[#FFD700] bg-gradient-to-br from-[#FFD700]/5 to-transparent p-8 text-center">
-        <h3 class="mb-3 text-2xl font-bold text-black">Still have questions?</h3>
-        <p class="mb-6 text-gray-600">Book a free first lesson to see whether the program is the right fit for your student.</p>
-        <button data-scroll="booking" class="rounded-xl bg-[#FF0040] px-8 py-3 font-semibold text-white shadow-lg transition-all hover:scale-105 hover:bg-[#FF3366]">Claim Your Free First Lesson</button>
-      </div>
+    <div>
+      <h4>Programs</h4>
+      <p style="display:grid; gap:.5rem; margin:0;">
+        <a href="programs.html">Holiday Masterclasses</a>
+        <a href="programs.html">Group Accelerator</a>
+        <a href="programs.html">Accelerator Plus</a>
+        <a href="programs.html">Private Coaching</a>
+      </p>
     </div>
-  </section>
-
-  
-  <section id="booking" class="bg-gradient-to-br from-[#0080FF]/5 via-white to-[#00D66B]/5 px-6 py-20 md:py-32">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-16 text-center reveal">
-        <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-[#0080FF]/10 px-4 py-2 text-sm font-semibold text-[#0080FF]">
-          <i data-lucide="calendar" class="h-4 w-4"></i> Book Your Call
-        </div>
-        <h2 class="mb-4 text-4xl font-bold text-black md:text-5xl">Book Your Free First Lesson</h2>
-        <p class="mx-auto max-w-2xl text-xl text-gray-600">Start online with a free first lesson, then receive a clear recommendation for the right program and next steps.</p>
-      </div>
-
-      <div class="mx-auto mb-8 max-w-4xl rounded-xl border-2 border-[#0080FF]/20 bg-white p-4 shadow-md">
-        <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600">
-          <div class="flex items-center gap-2"><i data-lucide="video" class="h-5 w-5 text-[#0080FF]"></i><span class="font-semibold text-gray-900">Online Video Session</span></div>
-          <div class="hidden h-4 w-px bg-gray-300 md:block"></div>
-          <span>Delivered fully online</span>
-          <div class="hidden h-4 w-px bg-gray-300 md:block"></div>
-          <span>Confirmation email sent automatically</span>
-        </div>
-      </div>
-
-      <div class="mx-auto max-w-4xl overflow-hidden rounded-2xl border-2 border-gray-200 shadow-2xl">
-        <div class="calendly-inline-widget" data-url="https://calendly.com/ozscholarsacademy/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=0080FF&text_color=030213&background_color=ffffff" style="min-width:320px;height:700px;"></div>
-      </div>
-
-      <div class="mt-12 flex flex-wrap justify-center gap-8">
-        <div class="text-center"><div class="mb-2 text-2xl font-bold text-[#00D66B]">50+</div><div class="text-sm text-gray-600">Calls Completed</div></div>
-        <div class="text-center"><div class="mb-2 text-2xl font-bold text-[#0080FF]">4.9/5</div><div class="text-sm text-gray-600">Star Average Rating</div></div>
-        <div class="text-center"><div class="mb-2 text-2xl font-bold text-[#FFD700]">100%</div><div class="text-sm text-gray-600">First Lessons Free</div></div>
-      </div>
+    <div>
+      <h4>Explore</h4>
+      <p style="display:grid; gap:.5rem; margin:0;">
+        <a href="tech-labs.html">Tech Labs</a>
+        <a href="referral.html">Refer a friend</a>
+        <a href="referral.html">Become a partner</a><a href="work-with-us.html">Work with us</a>
+        <a href="contact.html">Book a free lesson</a>
+      </p>
     </div>
-  </section>
-
-  
-  <section id="contact" class="bg-gradient-to-br from-white via-gray-50 to-white px-6 py-20 md:py-32">
-    <div class="mx-auto max-w-4xl">
-      <div class="mb-12 text-center reveal">
-        <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-[#FFD700]/10 px-4 py-2 text-sm font-semibold text-[#FF8C00]">
-          <i data-lucide="mail" class="h-4 w-4"></i> Get In Touch
-        </div>
-        <h2 class="mb-4 text-4xl font-bold text-black md:text-5xl">Have Questions? <span class="text-[#FFD700]">Let's Talk</span></h2>
-        <p class="text-xl text-gray-600">Tell us about the student, their year level, goals, and which online program you are interested in.</p>
-      </div>
-
-      <div class="rounded-3xl border-2 border-gray-200 bg-white p-8 shadow-2xl md:p-12">
-        <form action="https://formbold.com/s/94dQj" method="POST" class="space-y-6">
-          <input type="hidden" name="_redirect" value="https://ozscholarsacademy.com.au/" />
-          <div>
-            <label for="name" class="mb-2 flex items-center gap-2 text-sm font-semibold text-gray-700"><i data-lucide="user" class="h-4 w-4 text-[#0080FF]"></i> Your Name</label>
-            <input type="text" id="name" name="name" required class="w-full rounded-xl border-2 border-gray-200 bg-gray-50 px-4 py-3 text-gray-900 transition-all focus:border-[#0080FF] focus:bg-white focus:outline-none" placeholder="John Smith" />
-          </div>
-          <div>
-            <label for="email" class="mb-2 flex items-center gap-2 text-sm font-semibold text-gray-700"><i data-lucide="mail" class="h-4 w-4 text-[#00D66B]"></i> Email Address</label>
-            <input type="email" id="email" name="email" required class="w-full rounded-xl border-2 border-gray-200 bg-gray-50 px-4 py-3 text-gray-900 transition-all focus:border-[#00D66B] focus:bg-white focus:outline-none" placeholder="john@example.com" />
-          </div>
-          <div>
-            <label for="subject" class="mb-2 flex items-center gap-2 text-sm font-semibold text-gray-700"><i data-lucide="message-square" class="h-4 w-4 text-[#FF8C00]"></i> Subject</label>
-            <input type="text" id="subject" name="subject" required class="w-full rounded-xl border-2 border-gray-200 bg-gray-50 px-4 py-3 text-gray-900 transition-all focus:border-[#FF8C00] focus:bg-white focus:outline-none" placeholder="Inquiry about programs" />
-          </div>
-          <div>
-            <label for="message" class="mb-2 flex items-center gap-2 text-sm font-semibold text-gray-700"><i data-lucide="message-square" class="h-4 w-4 text-[#FFD700]"></i> Your Message</label>
-            <textarea id="message" name="message" required rows="6" class="w-full resize-none rounded-xl border-2 border-gray-200 bg-gray-50 px-4 py-3 text-gray-900 transition-all focus:border-[#FFD700] focus:bg-white focus:outline-none" placeholder="Tell us about your student..."></textarea>
-          </div>
-          <button type="submit" class="group w-full rounded-xl bg-[#FF0040] px-8 py-4 text-lg font-bold text-white shadow-lg transition-all hover:scale-[1.02] hover:bg-[#FF3366] hover:shadow-xl">
-            <span class="flex items-center justify-center gap-2">Send Message <i data-lucide="send" class="h-5 w-5 transition-transform group-hover:translate-x-1"></i></span>
-          </button>
-        </form>
-      </div>
-
-      <div class="mt-8 grid gap-4 md:grid-cols-2">
-        <div class="rounded-xl border-2 border-gray-200 bg-white p-6 text-center shadow-md">
-          <i data-lucide="mail" class="mx-auto mb-2 h-8 w-8 text-[#0080FF]"></i>
-          <div class="font-semibold text-gray-900">Connect Online</div>
-          <span class="text-sm text-gray-600">@ozscholarsacademy on Instagram & Facebook</span>
-        </div>
-        <div class="rounded-xl border-2 border-gray-200 bg-white p-6 text-center shadow-md">
-          <i data-lucide="message-square" class="mx-auto mb-2 h-8 w-8 text-[#00D66B]"></i>
-          <div class="font-semibold text-gray-900">Response Time</div>
-          <div class="text-sm text-gray-600">Within 24 hours</div>
-        </div>
-      </div>
+    <div>
+      <h4>Get in touch</h4>
+      <p style="display:grid; gap:.5rem; margin:0;">
+        <a href="mailto:ozscholarsacademy@gmail.com">ozscholarsacademy@gmail.com</a>
+        <a href="contact.html">Enquiry form</a>
+        <span style="color:#b6b2d4;">Online · Australia-wide</span>
+      </p>
     </div>
-  </section>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Oz Scholars Academy. All rights reserved.</span>
+    <span class="mono">Academic success, engineered.</span>
+  </div>
+</footer>
 
-  
-  <footer class="bg-gradient-to-br from-gray-900 via-black to-gray-900 px-6 py-16 text-white">
-    <div class="mx-auto max-w-7xl">
-      <div class="grid gap-12 md:grid-cols-4 mb-12">
-        <div class="md:col-span-1">
-          <h3 class="mb-4 text-2xl font-bold text-[#FFD700]">Oz Scholars Academy</h3>
-          <p class="mb-2 text-sm font-semibold text-gray-300">Systems-Driven Education</p>
-          <p class="text-sm text-gray-400 leading-relaxed">Engineering academic success through data-driven tutoring and optimised learning systems.</p>
-        </div>
-        <div>
-          <h4 class="mb-4 text-lg font-bold text-[#FFD700]">Quick Links</h4>
-          <ul class="space-y-2 text-sm">
-            <li><a href="#about" class="text-gray-400 transition-colors hover:text-[#FFD700]">About Us</a></li>
-            <li><a href="#system" class="text-gray-400 transition-colors hover:text-[#FFD700]">Our System</a></li>
-            <li><a href="#pricing" class="text-gray-400 transition-colors hover:text-[#FFD700]">Programs</a></li>
-            <li><a href="#booking" class="text-gray-400 transition-colors hover:text-[#FFD700]">Book a Call</a></li>
-            <li><a href="#faq" class="text-gray-400 transition-colors hover:text-[#FFD700]">FAQ</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="mb-4 text-lg font-bold text-[#FFD700]">Programs</h4>
-          <ul class="space-y-2 text-sm">
-            <li class="text-gray-400">Med Entry Prep</li>
-            <li class="text-gray-400">Academic Accelerator</li>
-            <li class="text-gray-400">Future Ready Skills</li>
-            <li class="text-gray-400">Selective and Scholarship Prep</li>
-            <li class="text-gray-400">ATAR Support</li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="mb-4 text-lg font-bold text-[#FFD700]">Contact</h4>
-          <ul class="space-y-3 text-sm">
-            <li class="flex items-start gap-2"><i data-lucide="mail" class="mt-0.5 h-4 w-4 flex-shrink-0 text-[#FFD700]"></i><a href="mailto:ozscholarsacademy@gmail.com" class="text-gray-400 transition-colors hover:text-[#FFD700]">ozscholarsacademy@gmail.com</a></li>
-            <li class="flex items-start gap-2"><i data-lucide="map-pin" class="mt-0.5 h-4 w-4 flex-shrink-0 text-[#FFD700]"></i><span class="text-gray-400">Based in Sydney, NSW</span></li>
-          </ul>
-        </div>
-      </div>
+<a href="contact.html" class="floating-cta">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 3 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  Book a free lesson
+</a>
 
-      <div class="mb-8 grid gap-4 md:grid-cols-4">
-        <div class="flex items-center gap-2 rounded-lg bg-gray-800/50 p-3"><i data-lucide="shield" class="h-5 w-5 text-[#00D66B]"></i><span class="text-xs text-gray-300">WWCC Verified Educators</span></div>
-        <div class="flex items-center gap-2 rounded-lg bg-gray-800/50 p-3"><i data-lucide="graduation-cap" class="h-5 w-5 text-[#0080FF]"></i><span class="text-xs text-gray-300">97+ ATAR Educators</span></div>
-        <div class="flex items-center gap-2 rounded-lg bg-gray-800/50 p-3"><i data-lucide="lock" class="h-5 w-5 text-[#FFD700]"></i><span class="text-xs text-gray-300">Privacy Compliant</span></div>
-        <div class="flex items-center gap-2 rounded-lg bg-gray-800/50 p-3"><i data-lucide="lock" class="h-5 w-5 text-[#FF0040]"></i><span class="text-xs text-gray-300">SSL Secured Platform</span></div>
-      </div>
-
-      <div class="border-t border-gray-800 pt-8">
-        <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <p class="text-sm text-gray-400">© 2026 Oz Scholars Academy. All rights reserved.</p>
-          <div class="flex gap-6 text-sm">
-            <a href="#privacy" class="text-gray-400 transition-colors hover:text-[#FFD700]">Privacy Policy</a>
-            <a href="#terms" class="text-gray-400 transition-colors hover:text-[#FFD700]">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  
-  <a href="#booking" class="floating-cta" id="floating-cta">
-    <i data-lucide="calendar" class="h-5 w-5"></i> Book a Call
-  </a>
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.383.0/dist/umd/lucide.min.js"></script>
-  
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

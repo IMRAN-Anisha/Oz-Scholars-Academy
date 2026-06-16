@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Programs | Oz Scholars Academy</title>
+<meta name="description" content="Holiday Masterclasses, the 8-week Group Accelerator, Accelerator Plus (group + 1:1), and Private Coaching — clear outcomes and transparent pricing for Years 3–12." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="assets/logo.png" type="image/png" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { corePlugins:{preflight:false}, theme:{ extend:{
+    colors:{ ink:'#16151c', paper:'#faf7f0', brand:{DEFAULT:'#241f57',600:'#332c7a',100:'#ecebf6'}, marker:'#ffd23f', electric:{DEFAULT:'#2f6bff',dark:'#1f4fcc'} },
+    fontFamily:{ display:['Sora','sans-serif'], body:['"Plus Jakarta Sans"','sans-serif'], mono:['"JetBrains Mono"','monospace'] }
+  }}};
+</script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand-logo" aria-label="Oz Scholars Academy home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">Oz Scholars Academy</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link active" href="programs.html">Programs</a>
+      <a class="nav-link" href="tech-labs.html">Tech Labs</a>
+      <a class="nav-link" href="referral.html">Partners</a>
+      <a class="nav-link" href="work-with-us.html">Careers</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="btn btn-primary nav-cta" href="contact.html">Book a free lesson</a>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#16151c" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
+  <div id="mobile-menu"><div class="mm-inner">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="programs.html">Programs</a>
+    <a class="nav-link" href="tech-labs.html">Tech Labs</a>
+    <a class="nav-link" href="referral.html">Partners</a>
+      <a class="nav-link" href="work-with-us.html">Careers</a>
+    <a class="nav-link" href="contact.html">Contact</a>
+    <a class="btn btn-primary" href="contact.html">Book a free lesson</a>
+  </div></div>
+</nav>
+
+<!-- HERO -->
+<header class="section dotgrid" style="padding-bottom:clamp(2rem,4vw,3rem);">
+  <div class="wrap" style="max-width:46rem;">
+    <span class="tag tag-marker reveal" style="margin-bottom:1rem;">Academic programs · Years 3–12</span>
+    <h1 class="reveal" style="font-size:clamp(2.2rem,4.8vw,3.4rem); margin-bottom:1rem;">One method, four ways to <span class="hl">get ahead</span>.</h1>
+    <p class="reveal" style="font-size:1.12rem; color:var(--ink-soft);">Every program runs on the Oz Scholars Method — diagnose, plan, build, track, prove. The only choice is how much support you want. Prices are per student in AUD; your free first lesson gives you the plan before you commit.</p>
+  </div>
+</header>
+
+<!-- HOLIDAY MASTERCLASSES -->
+<section class="section" style="background:#fff; border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
+      <div style="max-width:40rem;">
+        <span class="eyebrow">Holiday Masterclasses</span>
+        <h2 style="font-size:clamp(1.7rem,3.4vw,2.3rem); margin:.5rem 0 .6rem;">Don't lose the holidays — get ahead in them</h2>
+        <p style="color:var(--ink-soft); font-size:1.05rem;">Short, intensive sprints (2–4 live sessions) built around a single outcome. Each one ends with a real deliverable: a fixed gap, a marked essay, a mock exam, or a study system the student keeps.</p>
+      </div>
+      <div class="price" style="text-align:right;"><span class="from">from</span><br><span style="font-size:2rem;">$189</span></div>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card reveal">
+        <div class="tag" style="margin-bottom:.8rem;">Years 5–10</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.4rem;">Maths Gap Fix</h3>
+        <p style="font-size:.94rem; color:var(--ink-soft);">Find the weak topics, rebuild the basics, leave with a clear revision plan.</p>
+      </div>
+      <div class="card reveal" style="transition-delay:.05s;">
+        <div class="tag" style="margin-bottom:.8rem;">Years 7–12</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.4rem;">Exam Engine</h3>
+        <p style="font-size:.94rem; color:var(--ink-soft);">Past-paper technique, a real mock on the last day, and a personalised exam playbook.</p>
+      </div>
+      <div class="card reveal" style="transition-delay:.1s;">
+        <div class="tag" style="margin-bottom:.8rem;">Years 5–10</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.4rem;">Essay Forge</h3>
+        <p style="font-size:.94rem; color:var(--ink-soft);">Structure, persuasion and expression — walk out with a marked, reusable piece.</p>
+      </div>
+      <div class="card reveal">
+        <div class="tag" style="margin-bottom:.8rem;">Years 4–6</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.4rem;">Selective Foundations</h3>
+        <p style="font-size:.94rem; color:var(--ink-soft);">Reasoning, reading and timed practice for selective and scholarship tests.</p>
+      </div>
+      <div class="card reveal" style="transition-delay:.05s;">
+        <div class="tag" style="margin-bottom:.8rem;">Years 6–7</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.4rem;">High School Head Start</h3>
+        <p style="font-size:.94rem; color:var(--ink-soft);">Pre-learn term one so they start high school already a step ahead.</p>
+      </div>
+      <div class="card reveal" style="transition-delay:.1s;">
+        <div class="tag" style="margin-bottom:.8rem;">Years 11–12</div>
+        <h3 style="font-size:1.15rem; margin-bottom:.4rem;">Senior Study System</h3>
+        <p style="font-size:.94rem; color:var(--ink-soft);">Weekly planning, active recall and past-paper systems that actually stick.</p>
+      </div>
+    </div>
+    <p class="mono reveal" style="font-size:.78rem; color:var(--ink-soft); margin-top:1.4rem;">Every sprint includes: diagnostic mini-test · printable workbook · mistake tracker · parent summary · recommended next step.</p>
+  </div>
+</section>
+
+<!-- GROUP ACCELERATOR + ACCELERATOR PLUS -->
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center; max-width:40rem; margin:0 auto 2.4rem;">
+      <span class="eyebrow">The core programs</span>
+      <h2 style="font-size:clamp(1.7rem,3.4vw,2.3rem); margin:.5rem 0 .6rem;">Group Accelerator &amp; Accelerator Plus</h2>
+      <p style="color:var(--ink-soft); font-size:1.05rem;">The 8-week flagship for consistent, tracked improvement — and the upgrade that adds private support on top.</p>
+    </div>
+
+    <div class="split">
+      <!-- Accelerator -->
+      <div class="card reveal" style="display:flex; flex-direction:column;">
+        <div class="tag" style="margin-bottom:.9rem;">Core · 8 weeks · max 5</div>
+        <h3 style="font-size:1.4rem; margin-bottom:.3rem;">Group Accelerator</h3>
+        <p style="color:var(--ink-soft); margin-bottom:1rem;">A structured small-group program for capable students who need consistency, accountability and a clear weekly system.</p>
+        <div style="margin-bottom:1.1rem;">
+          <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Weekly live lesson, grouped by year &amp; subject</div>
+          <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Weekly homework + mini-quiz</div>
+          <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Progress tracker + parent updates</div>
+          <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Final improvement report</div>
+        </div>
+        <p style="font-size:.86rem; color:var(--ink-soft); margin-bottom:1.1rem;">Streams: Maths · English Writing · Exam Skills · Selective Foundations · Senior Study System</p>
+        <div style="margin-top:auto; display:flex; justify-content:space-between; align-items:center;">
+          <div class="price"><span class="from">8-week term, from</span><br><span style="font-size:1.7rem;">$449</span></div>
+          <a href="contact.html" class="btn btn-outline">Enquire</a>
+        </div>
+      </div>
+
+      <!-- Accelerator Plus (hero) -->
+      <div class="card reveal" style="transition-delay:.08s; position:relative; border:2px solid var(--brand); box-shadow:var(--shadow-lg); display:flex; flex-direction:column;">
+        <span class="pill-best">Best value</span>
+        <div class="tag tag-marker" style="margin-bottom:.9rem;">Group + private 1:1</div>
+        <h3 style="font-size:1.4rem; margin-bottom:.3rem;">Accelerator Plus</h3>
+        <p style="color:var(--ink-soft); margin-bottom:1rem;">The structure and motivation of a small group, with the personal attention of private coaching — bundled below buying both separately.</p>
+        <div style="margin-bottom:1.1rem;">
+          <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Everything in the Group Accelerator</div>
+          <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Private 1:1 support sessions each fortnight</div>
+          <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Personalised homework correction</div>
+          <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Priority assessment help before tests</div>
+        </div>
+        <div class="panel-tint" style="padding:.8rem 1rem; margin-bottom:1.1rem; font-size:.88rem;">
+          <strong>The maths:</strong> Accelerator ($449) + private sessions bought alone would run higher — Plus bundles them from <strong>$649</strong>.
+        </div>
+        <div style="margin-top:auto; display:flex; justify-content:space-between; align-items:center;">
+          <div class="price"><span class="from">8-week term, from</span><br><span style="font-size:1.7rem;">$649</span></div>
+          <a href="contact.html" class="btn btn-primary">Start free lesson</a>
+        </div>
+      </div>
+    </div>
+    <p class="mono reveal" style="font-size:.78rem; color:var(--ink-soft); margin-top:1.2rem; text-align:center;">Plus tiers: + 2 private sessions from $649 · + 4 private sessions from $849 per term.</p>
+  </div>
+</section>
+
+<!-- PRIVATE COACHING -->
+<section class="section" style="background:#fff; border-block:1px solid var(--line);">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Premium</span>
+      <h2 style="font-size:clamp(1.7rem,3.4vw,2.3rem); margin:.5rem 0 .8rem;">Private Coaching</h2>
+      <p style="color:var(--ink-soft); font-size:1.05rem; margin-bottom:1.2rem;">For students who need more than a worksheet and a weekly explanation. We diagnose the gaps, rebuild the foundations, and run a clear weekly plan so the student always knows exactly what to improve next.</p>
+      <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Weekly 1:1 online lesson + personalised plan</div>
+      <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Homework, mistake tracking &amp; parent updates</div>
+      <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Exam, assessment &amp; schoolwork support</div>
+    </div>
+    <div class="reveal card" style="transition-delay:.08s; padding:1.4rem;">
+      <div class="eyebrow" style="margin-bottom:.8rem;">Per-hour rates (AUD)</div>
+      <div style="display:grid; gap:.2rem;">
+        <div style="display:flex; justify-content:space-between; padding:.85rem 0; border-bottom:1px solid var(--line);"><span>Years 3–6</span><span class="price">$65<span style="font-size:.65em; font-weight:600;">/hr</span></span></div>
+        <div style="display:flex; justify-content:space-between; padding:.85rem 0; border-bottom:1px solid var(--line);"><span>Years 7–10</span><span class="price">$70<span style="font-size:.65em; font-weight:600;">/hr</span></span></div>
+        <div style="display:flex; justify-content:space-between; padding:.85rem 0; border-bottom:1px solid var(--line);"><span>Years 11–12</span><span class="price">$80<span style="font-size:.65em; font-weight:600;">/hr</span></span></div>
+        <div style="display:flex; justify-content:space-between; padding:.85rem 0;"><span>Specialist senior subjects</span><span class="price">$85–95<span style="font-size:.65em; font-weight:600;">/hr</span></span></div>
+      </div>
+      <a href="contact.html" class="btn btn-primary" style="width:100%; margin-top:1.1rem;">Book a free first lesson</a>
+    </div>
+  </div>
+</section>
+
+<!-- SAVINGS -->
+<section class="section">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center; max-width:40rem; margin:0 auto 2.2rem;">
+      <span class="eyebrow">Family savings</span>
+      <h2 style="font-size:clamp(1.7rem,3.4vw,2.3rem); margin:.5rem 0 .6rem;">Save more as you grow with us</h2>
+      <p style="color:var(--ink-soft); font-size:1.05rem;">Fair, simple savings that reward commitment — capped so quality never drops.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card-flat reveal"><h3 style="font-size:1.1rem; margin-bottom:.3rem;">Free first lesson</h3><p style="font-size:.93rem; color:var(--ink-soft);">A diagnostic + learning plan at no cost, for every new family.</p></div>
+      <div class="card-flat reveal" style="transition-delay:.05s;"><h3 style="font-size:1.1rem; margin-bottom:.3rem;">Sibling — 10% off</h3><p style="font-size:.93rem; color:var(--ink-soft);">For each additional child in an ongoing program.</p></div>
+      <div class="card-flat reveal" style="transition-delay:.1s;"><h3 style="font-size:1.1rem; margin-bottom:.3rem;">Multi-subject — 10% off</h3><p style="font-size:.93rem; color:var(--ink-soft);">On two or more group programs or term packages.</p></div>
+      <div class="card-flat reveal"><h3 style="font-size:1.1rem; margin-bottom:.3rem;">Early bird — 8% off</h3><p style="font-size:.93rem; color:var(--ink-soft);">Pay for the term upfront before the enrolment deadline.</p></div>
+      <div class="card-flat reveal" style="transition-delay:.05s;"><h3 style="font-size:1.1rem; margin-bottom:.3rem;">Refer a family — $50 + $50</h3><p style="font-size:.93rem; color:var(--ink-soft);">Both families get $50 credit after the referred family's first paid month.</p></div>
+      <div class="card-flat reveal" style="transition-delay:.1s;"><h3 style="font-size:1.1rem; margin-bottom:.3rem;">Catch-up support</h3><p style="font-size:.93rem; color:var(--ink-soft);">Give 24 hours' notice and we'll arrange a make-up session where we can.</p></div>
+    </div>
+    <p class="mono reveal" style="font-size:.76rem; color:var(--ink-soft); margin-top:1.4rem; text-align:center; max-width:48rem; margin-inline:auto;">Ongoing discounts are capped at 15% per student. Referral credits apply to future invoices and aren't exchangeable for cash. Trial offers and credits don't stack unless stated.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="reveal" style="background:linear-gradient(135deg,var(--brand),var(--brand-2)); border-radius:var(--radius-lg); padding:clamp(2.2rem,4vw,3.4rem); text-align:center;">
+      <h2 style="color:#fff; font-size:clamp(1.7rem,3.6vw,2.4rem); margin-bottom:.7rem;">Not sure which fits? Start free.</h2>
+      <p style="color:#ffe7ee; font-size:1.05rem; max-width:34rem; margin:0 auto 1.5rem;">Your free first lesson tells us exactly where your child is — and we'll recommend the right program, no pressure.</p>
+      <a href="contact.html" class="btn btn-marker btn-lg">Book your free lesson</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="brand-logo" style="margin-bottom:.9rem;"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">Oz Scholars Academy</span></a>
+      <p style="max-width:24rem; color:#b6b2d4;"><strong>Better Marks.</strong><span>Better Confidence.</span><span>Better Future.</span></p>
+    </div>
+    <div><h4>Programs</h4><p style="display:grid; gap:.5rem; margin:0;"><a href="programs.html">Holiday Masterclasses</a><a href="programs.html">Group Accelerator</a><a href="programs.html">Accelerator Plus</a><a href="programs.html">Private Coaching</a></p></div>
+    <div><h4>Explore</h4><p style="display:grid; gap:.5rem; margin:0;"><a href="tech-labs.html">Tech Labs</a><a href="referral.html">Refer a friend</a><a href="referral.html">Become a partner</a><a href="work-with-us.html">Work with us</a><a href="contact.html">Book a free lesson</a></p></div>
+    <div><h4>Get in touch</h4><p style="display:grid; gap:.5rem; margin:0;"><a href="mailto:ozscholarsacademy@gmail.com">ozscholarsacademy@gmail.com</a><a href="contact.html">Enquiry form</a><span style="color:#b6b2d4;">Online · Australia-wide</span></p></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Oz Scholars Academy. All rights reserved.</span><span class="mono">Academic success, engineered.</span></div>
+</footer>
+
+<a href="contact.html" class="floating-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 3 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Book a free lesson</a>
+<script src="script.js"></script>
+</body>
+</html>

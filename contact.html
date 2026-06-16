@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book a free first lesson | Oz Scholars Academy</title>
+<meta name="description" content="Book a free first lesson — it doubles as a diagnostic. We find the gaps and send a personalised learning plan, with no obligation to continue." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="assets/logo.png" type="image/png" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { corePlugins:{preflight:false}, theme:{ extend:{
+    colors:{ ink:'#16151c', paper:'#faf7f0', brand:{DEFAULT:'#241f57',600:'#332c7a',100:'#ecebf6'}, marker:'#ffd23f', electric:{DEFAULT:'#2f6bff',dark:'#1f4fcc'} },
+    fontFamily:{ display:['Sora','sans-serif'], body:['"Plus Jakarta Sans"','sans-serif'], mono:['"JetBrains Mono"','monospace'] }
+  }}};
+</script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand-logo" aria-label="Oz Scholars Academy home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">Oz Scholars Academy</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="programs.html">Programs</a>
+      <a class="nav-link" href="tech-labs.html">Tech Labs</a>
+      <a class="nav-link" href="referral.html">Partners</a>
+      <a class="nav-link" href="work-with-us.html">Careers</a>
+      <a class="nav-link active" href="contact.html">Contact</a>
+      <a class="btn btn-primary nav-cta" href="#book">Book a free lesson</a>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#16151c" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
+  <div id="mobile-menu"><div class="mm-inner">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="programs.html">Programs</a>
+    <a class="nav-link" href="tech-labs.html">Tech Labs</a>
+    <a class="nav-link" href="referral.html">Partners</a>
+      <a class="nav-link" href="work-with-us.html">Careers</a>
+    <a class="nav-link" href="contact.html">Contact</a>
+    <a class="btn btn-primary" href="#book">Book a free lesson</a>
+  </div></div>
+</nav>
+
+<!-- HERO + FORM -->
+<header class="section dotgrid" id="book">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="tag tag-marker" style="margin-bottom:1rem;">Free first lesson</span>
+      <h1 style="font-size:clamp(2.2rem,4.8vw,3.4rem); margin-bottom:1rem;">Start with a <span class="hl">free first lesson</span>.</h1>
+      <p style="font-size:1.1rem; color:var(--ink-soft); margin-bottom:1.6rem;">It doubles as a diagnostic. We find exactly where your child is, send you a personalised learning plan, and recommend the right program — with no obligation to continue.</p>
+      <div class="card-flat" style="padding:1.4rem;">
+        <div class="eyebrow" style="margin-bottom:1rem;">What happens in the session</div>
+        <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> A short diagnostic to pinpoint real strengths &amp; gaps</div>
+        <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> A taste of how lessons actually run</div>
+        <div class="check-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> A written learning plan you keep — enrol or not</div>
+      </div>
+    </div>
+
+    <!-- Booking / enquiry form -->
+    <div class="reveal card" style="transition-delay:.08s; padding:1.8rem;">
+      <h2 style="font-size:1.3rem; margin-bottom:1rem;">Book your free lesson</h2>
+      <form data-demo action="#" method="post">
+        <div class="form-success">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Got it! We'll be in touch within one business day to lock in a time.
+        </div>
+        <div class="field"><label>Your name <span class="req">*</span></label><input class="input" name="name" required placeholder="Parent or student name" /></div>
+        <div class="split" style="gap:1rem;">
+          <div class="field"><label>Email <span class="req">*</span></label><input class="input" type="email" name="email" required placeholder="you@email.com" /></div>
+          <div class="field"><label>Phone</label><input class="input" type="tel" name="phone" placeholder="Optional" /></div>
+        </div>
+        <div class="split" style="gap:1rem;">
+          <div class="field"><label>I'm a… <span class="req">*</span></label>
+            <select class="select" name="role" required><option value="" disabled selected>Choose</option><option>Parent</option><option>Student</option></select>
+          </div>
+          <div class="field"><label>Student year <span class="req">*</span></label>
+            <select class="select" name="year" required><option value="" disabled selected>Choose</option>
+              <option>Year 3</option><option>Year 4</option><option>Year 5</option><option>Year 6</option><option>Year 7</option><option>Year 8</option><option>Year 9</option><option>Year 10</option><option>Year 11</option><option>Year 12</option>
+            </select>
+          </div>
+        </div>
+        <div class="split" style="gap:1rem;">
+          <div class="field"><label>Main subject <span class="req">*</span></label>
+            <select class="select" name="subject" required><option value="" disabled selected>Choose</option><option>Maths</option><option>English</option><option>Science</option><option>Study skills</option><option>Selective / scholarship</option><option>Tech Lab</option><option>Other</option></select>
+          </div>
+          <div class="field"><label>How soon? <span class="req">*</span></label>
+            <select class="select" name="urgency" required><option value="" disabled selected>Choose</option><option>ASAP</option><option>This month</option><option>This term</option><option>Just browsing</option></select>
+          </div>
+        </div>
+        <div class="field"><label>Main concern</label>
+          <select class="select" name="concern"><option value="" disabled selected>Choose (optional)</option><option>Falling behind</option><option>Exam stress</option><option>Confidence</option><option>Extension / wants more challenge</option><option>Selective prep</option><option>Homework habits</option></select>
+        </div>
+        <div class="field"><label>Anything else?</label><textarea class="textarea" name="message" placeholder="Tell us a little about your child"></textarea></div>
+        <label class="checkbox-row" style="margin-bottom:1.2rem;">
+          <input type="checkbox" name="consent" required />
+          <span>I agree to be contacted about my enquiry and to receive occasional study tips. I can unsubscribe anytime.</span>
+        </label>
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Book my free lesson</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- OTHER CONTACT -->
+<section class="section" style="background:#fff; border-block:1px solid var(--line);">
+  <div class="wrap grid grid-3">
+    <div class="card-flat reveal"><div class="eyebrow" style="margin-bottom:.6rem;">Email</div><a href="mailto:ozscholarsacademy@gmail.com" style="font-weight:700; color:var(--brand); text-decoration:none;">ozscholarsacademy@gmail.com</a><p style="font-size:.92rem; color:var(--ink-soft); margin-top:.4rem;">We reply within one business day.</p></div>
+    <div class="card-flat reveal" style="transition-delay:.05s;"><div class="eyebrow" style="margin-bottom:.6rem;">Where</div><strong>Online · Australia-wide</strong><p style="font-size:.92rem; color:var(--ink-soft); margin-top:.4rem;">Live lessons, no travel — join from anywhere.</p></div>
+    <div class="card-flat reveal" style="transition-delay:.1s;"><div class="eyebrow" style="margin-bottom:.6rem;">Hours</div><strong>Mon–Fri 3–8pm · Sat 9am–1pm</strong><p style="font-size:.92rem; color:var(--ink-soft); margin-top:.4rem;">Holiday programs run in the school breaks.</p></div>
+  </div>
+</section>
+
+<!-- MINI FAQ -->
+<section class="section">
+  <div class="wrap" style="max-width:48rem;">
+    <div class="reveal" style="text-align:center; margin-bottom:1.6rem;">
+      <span class="eyebrow">Before you book</span>
+      <h2 style="font-size:clamp(1.6rem,3.2vw,2.2rem); margin-top:.5rem;">Quick answers</h2>
+    </div>
+    <div class="reveal">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Is the first lesson genuinely free?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-panel"><p>Yes — no card, no catch. You walk away with a learning plan whether or not you enrol.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What do we need to join online?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-panel"><p>A laptop or tablet, a quiet spot and an internet connection. We send a simple link before each lesson.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can we switch programs later?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-panel"><p>Absolutely. Many families start with a holiday sprint, move into the Accelerator, and add private support as needed. There's no lock-in.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="index.html" class="brand-logo" style="margin-bottom:.9rem;"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">Oz Scholars Academy</span></a>
+      <p style="max-width:24rem; color:#b6b2d4;"><strong>Better Marks.</strong><span>Better Confidence.</span><span>Better Future.</span></p>
+    </div>
+    <div><h4>Programs</h4><p style="display:grid; gap:.5rem; margin:0;"><a href="programs.html">Holiday Masterclasses</a><a href="programs.html">Group Accelerator</a><a href="programs.html">Accelerator Plus</a><a href="programs.html">Private Coaching</a></p></div>
+    <div><h4>Explore</h4><p style="display:grid; gap:.5rem; margin:0;"><a href="tech-labs.html">Tech Labs</a><a href="referral.html">Refer a friend</a><a href="referral.html">Become a partner</a><a href="work-with-us.html">Work with us</a><a href="contact.html">Book a free lesson</a></p></div>
+    <div><h4>Get in touch</h4><p style="display:grid; gap:.5rem; margin:0;"><a href="mailto:ozscholarsacademy@gmail.com">ozscholarsacademy@gmail.com</a><a href="contact.html">Enquiry form</a><span style="color:#b6b2d4;">Online · Australia-wide</span></p></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Oz Scholars Academy. All rights reserved.</span><span class="mono">Academic success, engineered.</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
