@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="icon" href="assets/logo.png" type="image/png" />
+<link rel="icon" href="/assets/logo.png" type="image/png" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = { corePlugins:{preflight:false}, theme:{ extend:{
@@ -16,7 +16,7 @@
     fontFamily:{ display:['Sora','sans-serif'], body:['"Plus Jakarta Sans"','sans-serif'], mono:['"JetBrains Mono"','monospace'] }
   }}};
 </script>
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
 <div id="scroll-progress"></div>
@@ -24,29 +24,29 @@
 <!-- NAV -->
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="brand-logo" aria-label="Oz Scholars Academy home">
+    <a href="../index.html" class="brand-logo" aria-label="Oz Scholars Academy home">
       <span class="brand-mark" aria-hidden="true"></span>
       <span class="brand-text">Oz Scholars Academy</span>
     </a>
     <div class="nav-links">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="programs.html">Programs</a>
-      <a class="nav-link" href="tech-labs.html">Tech Labs</a>
-      <a class="nav-link active" href="referral.html">Partners</a>
-      <a class="nav-link" href="work-with-us.html">Careers</a>
-      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="../index.html">Home</a>
+      <a class="nav-link" href="../programs/index.html">Programs</a>
+      <a class="nav-link" href="../tech-labs/index.html">Tech Labs</a>
+      <a class="nav-link active" href="index.html">Partners</a>
+      <a class="nav-link" href="../work-with-us/index.html">Careers</a>
+      <a class="nav-link" href="../contact/index.html">Contact</a>
       <a class="btn btn-primary nav-cta" href="#apply">Book a free lesson</a>
     </div>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#16151c" stroke-width="2" stroke-linecap="round"/></svg></button>
   </div>
   <div id="mobile-menu"><div class="mm-inner">
-    <a class="nav-link" href="index.html">Home</a>
-    <a class="nav-link" href="programs.html">Programs</a>
-    <a class="nav-link" href="tech-labs.html">Tech Labs</a>
-    <a class="nav-link" href="referral.html">Partners</a>
-      <a class="nav-link" href="work-with-us.html">Careers</a>
-    <a class="nav-link" href="contact.html">Contact</a>
-    <a class="btn btn-primary" href="contact.html">Book a free lesson</a>
+    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../programs/index.html">Programs</a>
+    <a class="nav-link" href="../tech-labs/index.html">Tech Labs</a>
+    <a class="nav-link" href="index.html">Partners</a>
+      <a class="nav-link" href="../work-with-us/index.html">Careers</a>
+    <a class="nav-link" href="../contact/index.html">Contact</a>
+    <a class="btn btn-primary" href="../contact/index.html">Book a free lesson</a>
   </div></div>
 </nav>
 
@@ -76,10 +76,10 @@
       <h2 style="font-size:1.5rem; margin-bottom:.5rem;">Become a Scholar Partner</h2>
       <p style="color:var(--ink-soft); margin-bottom:1rem;">For people who can reach families regularly — parents with networks, tutors, coaches, youth mentors, creators and local organisations. You get a unique code and earn per enrolled family.</p>
       <div style="display:grid; gap:.55rem;">
-        <div style="display:flex; justify-content:space-between; background:#fff; border:1px solid var(--line); border-radius:12px; padding:.7rem .9rem;"><span>Casual partner</span><strong>$50 / paid family</strong></div>
-        <div style="display:flex; justify-content:space-between; background:#fff; border:1px solid var(--line); border-radius:12px; padding:.7rem .9rem;"><span>Active partner <span class="mono" style="font-size:.7rem; color:var(--ink-soft);">(3+)</span></span><strong>$75 / paid family</strong></div>
-        <div style="display:flex; justify-content:space-between; background:#fff; border:1px solid var(--line); border-radius:12px; padding:.7rem .9rem;"><span>High performer <span class="mono" style="font-size:.7rem; color:var(--ink-soft);">(10+)</span></span><strong>$100 / paid family</strong></div>
-        <div style="display:flex; justify-content:space-between; background:var(--brand); color:#fff; border-radius:12px; padding:.7rem .9rem;"><span>School / community group</span><strong style="color:var(--marker);">Custom</strong></div>
+        <div style="display:flex; justify-content:space-between; background:#fff; border:1px solid var(--line); border-radius:12px; padding:.7rem .9rem;"><span>Partner reward</span><strong>$50 / paid family</strong></div>
+        <div style="display:flex; justify-content:space-between; background:#fff; border:1px solid var(--line); border-radius:12px; padding:.7rem .9rem;"><span>Marketing resources</span><strong>Included</strong></div>
+        <div style="display:flex; justify-content:space-between; background:#fff; border:1px solid var(--line); border-radius:12px; padding:.7rem .9rem;"><span>Referral tracking</span><strong>Unique partner code</strong></div>
+        <div style="display:flex; justify-content:space-between; background:var(--brand); color:#fff; border-radius:12px; padding:.7rem .9rem;"><span>Schools & community groups</span><strong style="color:var(--marker);">Custom partnership</strong></div>
       </div>
     </div>
   </div>
@@ -109,48 +109,112 @@
       <p style="color:var(--ink-soft); margin-top:.5rem;">Takes two minutes. We'll be in touch with your code and the details.</p>
     </div>
 
-    <form class="reveal card" data-demo style="padding:1.8rem;" action="#" method="post">
-      <div class="form-success">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Thanks! Your application is in — we'll email your referral code shortly.
-      </div>
+    
+<form
+  class="reveal card"
+  style="padding:1.8rem;"
+  action="https://formbold.com/s/9BLyY"
+  method="POST"
+>
+  <div class="split" style="gap:1rem;">
+    <div class="field">
+      <label>Full Name *</label>
+      <input
+        class="input"
+        type="text"
+        name="name"
+        required
+        placeholder="Your name"
+      />
+    </div>
 
-      <div class="split" style="gap:1rem;">
-        <div class="field"><label>Full name <span class="req">*</span></label><input class="input" name="name" required placeholder="Your name" /></div>
-        <div class="field"><label>Email <span class="req">*</span></label><input class="input" type="email" name="email" required placeholder="you@email.com" /></div>
-      </div>
-      <div class="split" style="gap:1rem;">
-        <div class="field"><label>Phone</label><input class="input" type="tel" name="phone" placeholder="Optional" /></div>
-        <div class="field"><label>Suburb / city</label><input class="input" name="suburb" placeholder="e.g. Parramatta, NSW" /></div>
-      </div>
-      <div class="field">
-        <label>How do you know families or students? <span class="req">*</span></label>
-        <select class="select" name="audience" required>
-          <option value="" disabled selected>Choose one</option>
-          <option>I'm a parent with a network</option>
-          <option>Tutor or teacher</option>
-          <option>Sports coach / youth mentor</option>
-          <option>Content creator with a parent audience</option>
-          <option>School or community organisation</option>
-          <option>Small business owner</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>Roughly how many families could you refer?</label>
-        <select class="select" name="volume">
-          <option value="" disabled selected>Choose one</option>
-          <option>1–2</option><option>3–5</option><option>6–10</option><option>10+</option>
-        </select>
-      </div>
-      <div class="field"><label>Social / website link</label><input class="input" name="link" placeholder="Instagram, LinkedIn, Facebook or website" /></div>
-      <div class="field"><label>Why do you want to partner with us?</label><textarea class="textarea" name="why" placeholder="A sentence or two is plenty"></textarea></div>
-      <label class="checkbox-row" style="margin-bottom:1.2rem;">
-        <input type="checkbox" name="consent" required />
-        <span>I agree to receive emails about the partner program and occasional updates from Oz Scholars Academy. I can unsubscribe anytime.</span>
-      </label>
-      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Apply to become a partner</button>
-    </form>
+    <div class="field">
+      <label>Email *</label>
+      <input
+        class="input"
+        type="email"
+        name="email"
+        required
+        placeholder="you@email.com"
+      />
+    </div>
+  </div>
+
+  <div class="split" style="gap:1rem;">
+    <div class="field">
+      <label>Phone *</label>
+      <input
+        class="input"
+        type="tel"
+        name="phone"
+        required
+        placeholder="Your phone number"
+      />
+    </div>
+
+    <div class="field">
+      <label>Suburb / City *</label>
+      <input
+        class="input"
+        type="text"
+        name="location"
+        required
+        placeholder="e.g. Parramatta, NSW"
+      />
+    </div>
+  </div>
+
+  <div class="field">
+    <label>How do you know families or students? *</label>
+    <textarea
+      class="textarea"
+      name="audience"
+      required
+      placeholder="Tell us a little about your network"
+    ></textarea>
+  </div>
+
+  <div class="field">
+    <label>Estimated referrals *</label>
+    <input
+      class="input"
+      type="text"
+      name="volume"
+      required
+      placeholder="e.g. 1 to 5, 5 to 10, 10+"
+    />
+  </div>
+
+  <div class="field">
+    <label>Social Media / Website *</label>
+    <input
+      class="input"
+      type="text"
+      name="website"
+      required
+      placeholder="Instagram, Facebook, LinkedIn or website"
+    />
+  </div>
+
+  <div class="field">
+    <label>Why would you like to partner with Oz Scholars Academy? *</label>
+    <textarea
+      class="textarea"
+      name="message"
+      required
+      placeholder="A sentence or two is plenty"
+    ></textarea>
+  </div>
+
+  <button
+    type="submit"
+    class="btn btn-primary btn-lg"
+    style="width:100%;"
+  >
+    Apply to Become a Partner
+  </button>
+</form>
+
 
     <p class="mono reveal" style="font-size:.74rem; color:var(--ink-soft); margin-top:1.2rem; text-align:center;">Rewards are confirmed after a referred family completes their first paid month. Referral credits apply to invoices and aren't exchangeable for cash. Free bookings alone don't qualify.</p>
   </div>
@@ -160,17 +224,17 @@
 <footer class="footer">
   <div class="footer-inner">
     <div>
-      <a href="index.html" class="brand-logo" style="margin-bottom:.9rem;"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">Oz Scholars Academy</span></a>
-      <p style="max-width:24rem; color:#b6b2d4;"><strong>Better Marks.</strong><span>Better Confidence.</span><span>Better Future.</span></p>
+      <a href="../index.html" class="brand-logo" style="margin-bottom:.9rem;"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">Oz Scholars Academy</span></a>
+      <p class="footer-tagline"><strong>Better Marks.</strong><span>Better Confidence.</span><span>Better Future.</span></p>
     </div>
-    <div><h4>Programs</h4><p style="display:grid; gap:.5rem; margin:0;"><a href="programs.html">Holiday Masterclasses</a><a href="programs.html">Group Accelerator</a><a href="programs.html">Accelerator Plus</a><a href="programs.html">Private Coaching</a></p></div>
-    <div><h4>Explore</h4><p style="display:grid; gap:.5rem; margin:0;"><a href="tech-labs.html">Tech Labs</a><a href="referral.html">Refer a friend</a><a href="referral.html">Become a partner</a><a href="work-with-us.html">Work with us</a><a href="contact.html">Book a free lesson</a></p></div>
-    <div><h4>Get in touch</h4><p style="display:grid; gap:.5rem; margin:0;"><a href="mailto:ozscholarsacademy@gmail.com">ozscholarsacademy@gmail.com</a><a href="contact.html">Enquiry form</a><span style="color:#b6b2d4;">Online · Australia-wide</span></p></div>
+    <div><h4>Programs</h4><p style="display:grid; gap:.5rem; margin:0;"><a href="../programs/index.html">Holiday Masterclasses</a><a href="../programs/index.html">Group Accelerator</a><a href="../programs/index.html">Accelerator Plus</a><a href="../programs/index.html">Private Coaching</a></p></div>
+    <div><h4>Explore</h4><p style="display:grid; gap:.5rem; margin:0;"><a href="../tech-labs/index.html">Tech Labs</a><a href="index.html">Refer a friend</a><a href="index.html">Become a partner</a><a href="../work-with-us/index.html">Work with us</a><a href="../contact/index.html">Book a free lesson</a></p></div>
+    <div><h4>Get in touch</h4><p style="display:grid; gap:.5rem; margin:0;"><a href="mailto:ozscholarsacademy@gmail.com">ozscholarsacademy@gmail.com</a><a href="../contact/index.html">Enquiry form</a><span style="color:#b6b2d4;">Online · Australia-wide</span></p></div>
   </div>
   <div class="footer-bottom"><span>© 2026 Oz Scholars Academy. All rights reserved.</span><span class="mono">Academic success, engineered.</span></div>
 </footer>
 
-<a href="contact.html" class="floating-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 3 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Book a free lesson</a>
-<script src="script.js"></script>
+<a href="../contact/index.html" class="floating-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 3 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Book a free lesson</a>
+<script src="/script.js"></script>
 </body>
 </html>
