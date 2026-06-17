@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Privacy Policy — Oz Scholars Academy</title>
-<meta name="description" content="How Oz Scholars Academy collects, uses, stores, and protects your personal information." />
+<title>Child Safety Policy — Oz Scholars Academy</title>
+<meta name="description" content="Oz Scholars Academy's commitment to the safety and wellbeing of children and young people using our services." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -43,6 +43,27 @@
   .legal-body a:hover { text-decoration: underline; }
   .legal-body strong { color: var(--ink); }
 
+  .commit {
+    background: var(--dark); color:#eceaf4; border-radius: var(--radius-lg);
+    padding: 1.6rem 1.7rem; margin: 0 0 .5rem;
+  }
+  .commit p { color:#c9c7d6; margin:.7rem 0 0; }
+  .commit strong { color:#fff; }
+  .commit .zero {
+    display:inline-flex; align-items:center; gap:.5rem;
+    font-family:'JetBrains Mono',monospace; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase;
+    font-weight:700; color:#2a2200; background: var(--marker);
+    padding:.35rem .7rem; border-radius:999px;
+  }
+
+  .notice {
+    display:flex; gap:.8rem; align-items:flex-start;
+    background: var(--brand-tint); border:1px solid #ffd5de;
+    border-radius: var(--radius); padding: 1rem 1.1rem; margin:1rem 0;
+    color: var(--ink-soft); font-size:.94rem;
+  }
+  .notice svg { flex:none; margin-top:.1rem; color: var(--brand); }
+
   .legal-note { margin-top: 2.6rem; background: var(--marker-soft); border-radius: var(--radius); padding: 1.1rem 1.3rem; font-size:.9rem; color: var(--gold-text); line-height:1.6; }
   .legal-note strong { color: var(--gold-text); }
 
@@ -66,9 +87,9 @@
     <div class="nav-links">
       <a class="nav-link" href="/">Home</a>
       <a class="nav-link" href="/terms-and-conditions/">Terms</a>
-      <a class="nav-link active" href="/privacy-policy/">Privacy</a>
+      <a class="nav-link" href="/privacy-policy/">Privacy</a>
       <a class="nav-link" href="/cancellations-and-refunds/">Refunds</a>
-      <a class="nav-link" href="/child-safety/">Child Safety</a>
+      <a class="nav-link active" href="/child-safety/">Child Safety</a>
       <a class="btn btn-primary nav-cta" href="mailto:ozscholarsacademy@gmail.com">Contact</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -90,11 +111,11 @@
 <header class="legal-head">
   <div class="wrap">
     <span class="eyebrow">Legal</span>
-    <h1>Privacy <span class="hl">Policy</span></h1>
-    <p class="lede">Oz Scholars Academy is committed to protecting your privacy. This policy explains how we collect, use, disclose, store, and protect your personal information.</p>
+    <h1>Child <span class="hl">Safety</span> Policy</h1>
+    <p class="lede">Oz Scholars Academy is committed to the safety, wellbeing, and protection of every child and young person who engages with our services.</p>
     <div class="legal-meta">
       <span class="tag">Last updated · 17 June 2026</span>
-      <span class="tag tag-electric">We do not sell your data</span>
+      <span class="tag tag-electric">NSW · Working With Children Check</span>
     </div>
   </div>
 </header>
@@ -104,172 +125,130 @@
     <aside class="toc" aria-label="On this page">
       <p class="toc-title">On this page</p>
       <ol>
-        <li><a href="#intro">1. Introduction</a></li>
-        <li><a href="#collect">2. Information We Collect</a></li>
-        <li><a href="#how-collect">3. How We Collect Information</a></li>
-        <li><a href="#use">4. How We Use Information</a></li>
-        <li><a href="#marketing">5. Marketing Communications</a></li>
-        <li><a href="#cookies">6. Cookies</a></li>
-        <li><a href="#sharing">7. Sharing Information</a></li>
-        <li><a href="#security">8. Data Storage &amp; Security</a></li>
-        <li><a href="#overseas">9. Overseas Data Transfers</a></li>
-        <li><a href="#children">10. Children's Privacy</a></li>
-        <li><a href="#access">11. Access &amp; Correction</a></li>
-        <li><a href="#retention">12. Data Retention</a></li>
-        <li><a href="#changes">13. Changes to this Policy</a></li>
-        <li><a href="#contact">14. Contact</a></li>
+        <li><a href="#commitment">1. Our Commitment</a></li>
+        <li><a href="#scope">2. Scope</a></li>
+        <li><a href="#screening">3. Screening &amp; WWCC</a></li>
+        <li><a href="#conduct">4. Code of Conduct</a></li>
+        <li><a href="#online">5. Online Safety</a></li>
+        <li><a href="#parents">6. Role of Parents &amp; Guardians</a></li>
+        <li><a href="#reporting">7. Reporting Concerns</a></li>
+        <li><a href="#response">8. Responding to Concerns</a></li>
+        <li><a href="#privacy">9. Privacy &amp; Records</a></li>
+        <li><a href="#review">10. Training &amp; Review</a></li>
+        <li><a href="#contact">11. Contact</a></li>
       </ol>
     </aside>
 
     <article class="legal-body card-flat">
-      <section id="intro">
-        <h2><span class="n">01</span> Introduction</h2>
-        <p>Oz Scholars Academy is committed to protecting your privacy.</p>
-        <p>This Privacy Policy explains how we collect, use, disclose, store, and protect your personal information.</p>
+      <section id="commitment">
+        <h2><span class="n">01</span> Our Commitment</h2>
+        <div class="commit">
+          <span class="zero">Zero tolerance for child abuse</span>
+          <p><strong>Oz Scholars Academy is committed to the safety, wellbeing, and protection of all children and young people who use our services.</strong> We have zero tolerance for child abuse, neglect, exploitation, or harm of any kind, and we are committed to acting in the best interests of children at all times.</p>
+        </div>
+        <p>We value, respect, and listen to children and young people, and we take all concerns about their safety seriously.</p>
       </section>
 
-      <section id="collect">
-        <h2><span class="n">02</span> Information We Collect</h2>
-        <h3>Personal Information</h3>
-        <p>We may collect:</p>
+      <section id="scope">
+        <h2><span class="n">02</span> Scope</h2>
+        <p>This policy applies to everyone engaged by Oz Scholars Academy, including:</p>
         <ul>
-          <li>Full name</li>
-          <li>Email address</li>
-          <li>Phone number</li>
-          <li>Residential suburb</li>
-          <li>Date of birth</li>
-          <li>Parent or guardian details</li>
-          <li>Educational information</li>
-          <li>Account details</li>
-          <li>Billing information</li>
-        </ul>
-        <h3>Technical Information</h3>
-        <p>We may collect:</p>
-        <ul>
-          <li>IP address</li>
-          <li>Device information</li>
-          <li>Browser information</li>
-          <li>Website activity</li>
-          <li>Cookies</li>
-          <li>Analytics information</li>
+          <li>Tutors and mentors</li>
+          <li>Employees and contractors</li>
+          <li>Volunteers</li>
+          <li>Directors and management</li>
+          <li>Anyone who interacts with students on our behalf</li>
         </ul>
       </section>
 
-      <section id="how-collect">
-        <h2><span class="n">03</span> How We Collect Information</h2>
-        <p>We collect information when you:</p>
+      <section id="screening">
+        <h2><span class="n">03</span> Screening &amp; Working With Children Checks</h2>
+        <p>All tutors, staff, and contractors who work with children are required to:</p>
         <ul>
-          <li>Create an account</li>
-          <li>Book services</li>
-          <li>Complete forms</li>
-          <li>Subscribe to newsletters</li>
-          <li>Contact us</li>
-          <li>Attend events</li>
-          <li>Use our website</li>
+          <li>Hold a valid Working With Children Check (WWCC) as required under New South Wales law</li>
+          <li>Provide proof of identity and relevant qualifications</li>
+          <li>Complete our onboarding and child-safety induction before working with students</li>
+        </ul>
+        <p>We verify these requirements before any tutor is matched with a student, and we may conduct ongoing checks during their engagement with us.</p>
+      </section>
+
+      <section id="conduct">
+        <h2><span class="n">04</span> Code of Conduct</h2>
+        <p>All adults engaged by OSA must:</p>
+        <ul>
+          <li>Treat children with respect and maintain appropriate professional boundaries at all times</li>
+          <li>Conduct sessions through approved OSA channels and platforms</li>
+          <li>Avoid private, unsupervised, or off-platform contact with students</li>
+          <li>Never share personal contact details or arrange to meet students privately</li>
+          <li>Never engage in any form of bullying, harassment, grooming, or inappropriate communication</li>
+          <li>Avoid being alone with a child in a way that cannot be observed where reasonably possible</li>
+        </ul>
+        <div class="notice">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V5l-8-3Z"/></svg>
+          <span>Any breach of this Code of Conduct may result in immediate suspension or termination and, where appropriate, referral to the relevant authorities.</span>
+        </div>
+      </section>
+
+      <section id="online">
+        <h2><span class="n">05</span> Online Safety</h2>
+        <p>As our services are delivered online, we take additional steps to keep students safe:</p>
+        <ul>
+          <li>Sessions are conducted through approved platforms such as Zoom or Google Meet</li>
+          <li>We encourage sessions to take place in a shared or visible area of the home</li>
+          <li>Communication between tutors and students should occur through approved OSA channels</li>
+          <li>We recommend parents and guardians remain aware of, and able to observe, online sessions</li>
         </ul>
       </section>
 
-      <section id="use">
-        <h2><span class="n">04</span> How We Use Information</h2>
-        <p>We use information to:</p>
+      <section id="parents">
+        <h2><span class="n">06</span> Role of Parents &amp; Guardians</h2>
+        <p>Parents and guardians play an important role in keeping children safe. We ask that they:</p>
         <ul>
-          <li>Deliver tutoring services</li>
-          <li>Match students with tutors</li>
-          <li>Manage bookings</li>
-          <li>Process payments</li>
-          <li>Improve services</li>
-          <li>Respond to enquiries</li>
-          <li>Maintain platform security</li>
-          <li>Send updates and communications</li>
+          <li>Supervise their child's use of our services where appropriate</li>
+          <li>Help set up a suitable, visible learning environment</li>
+          <li>Raise any concerns about a tutor or session with us promptly</li>
         </ul>
       </section>
 
-      <section id="marketing">
-        <h2><span class="n">05</span> Marketing Communications</h2>
-        <p>We may send:</p>
+      <section id="reporting">
+        <h2><span class="n">07</span> Reporting Concerns</h2>
+        <p>If you have any concern about the safety or wellbeing of a child connected to our services, please contact us immediately at <a href="mailto:ozscholarsacademy@gmail.com">ozscholarsacademy@gmail.com</a>.</p>
+        <p>If a child is in immediate danger, always call <strong>000</strong> (Emergency Services) first.</p>
+        <p>Concerns about a child's safety can also be reported to the relevant child protection authority in your state or territory. In New South Wales, this is the Department of Communities and Justice.</p>
+      </section>
+
+      <section id="response">
+        <h2><span class="n">08</span> Responding to Concerns</h2>
+        <p>When a concern is raised, OSA will:</p>
         <ul>
-          <li>Newsletters</li>
-          <li>Educational updates</li>
-          <li>Promotions</li>
-          <li>Event invitations</li>
+          <li>Take the concern seriously and act promptly</li>
+          <li>Prioritise the safety and wellbeing of the child</li>
+          <li>Report to NSW Police, the Department of Communities and Justice, or other authorities where required by law</li>
+          <li>Suspend any individual involved while a concern is being assessed where appropriate</li>
+          <li>Cooperate fully with any external investigation</li>
         </ul>
-        <p>Users may unsubscribe at any time.</p>
+        <p>We comply with our mandatory and reportable conduct obligations under applicable Australian law.</p>
       </section>
 
-      <section id="cookies">
-        <h2><span class="n">06</span> Cookies</h2>
-        <p>Cookies may be used to:</p>
-        <ul>
-          <li>Improve user experience</li>
-          <li>Remember preferences</li>
-          <li>Measure website traffic</li>
-          <li>Improve website functionality</li>
-        </ul>
-        <p>Users can disable cookies through browser settings.</p>
+      <section id="privacy">
+        <h2><span class="n">09</span> Privacy &amp; Records</h2>
+        <p>Information relating to child safety concerns is handled sensitively and confidentially, and shared only with those who need it to keep a child safe or as required by law. Our broader handling of personal information is set out in our <a href="privacy.html">Privacy Policy</a>.</p>
       </section>
 
-      <section id="sharing">
-        <h2><span class="n">07</span> Sharing Information</h2>
-        <p>We may disclose information to:</p>
-        <ul>
-          <li>Tutors</li>
-          <li>Contractors</li>
-          <li>Technology providers</li>
-          <li>Payment processors</li>
-          <li>Legal authorities where required</li>
-        </ul>
-        <p>We do not sell personal information.</p>
-      </section>
-
-      <section id="security">
-        <h2><span class="n">08</span> Data Storage &amp; Security</h2>
-        <p>We implement reasonable safeguards to protect information.</p>
-        <p>While we take security seriously, no electronic system can guarantee complete security.</p>
-      </section>
-
-      <section id="overseas">
-        <h2><span class="n">09</span> Overseas Data Transfers</h2>
-        <p>Some providers may store information outside Australia.</p>
-        <p>By using our services, you consent to these transfers where reasonably necessary.</p>
-      </section>
-
-      <section id="children">
-        <h2><span class="n">10</span> Children's Privacy</h2>
-        <p>We provide services to minors.</p>
-        <p>Where required, parental consent will be obtained before collecting information from children. For more on how we keep young people safe, see our <a href="child-safety.html">Child Safety Policy</a>.</p>
-      </section>
-
-      <section id="access">
-        <h2><span class="n">11</span> Access &amp; Correction</h2>
-        <p>Users may request access to their personal information and request corrections to inaccurate information.</p>
-      </section>
-
-      <section id="retention">
-        <h2><span class="n">12</span> Data Retention</h2>
-        <p>Information is retained only for as long as reasonably necessary to:</p>
-        <ul>
-          <li>Deliver services</li>
-          <li>Meet legal obligations</li>
-          <li>Resolve disputes</li>
-          <li>Protect our business interests</li>
-        </ul>
-      </section>
-
-      <section id="changes">
-        <h2><span class="n">13</span> Changes to this Policy</h2>
-        <p>We may update this Privacy Policy periodically.</p>
-        <p>Updated versions will be published on this page.</p>
+      <section id="review">
+        <h2><span class="n">10</span> Training &amp; Review</h2>
+        <p>We provide child-safety guidance to our tutors and staff, and we review this policy regularly to ensure it reflects current best practice and legal requirements.</p>
       </section>
 
       <section id="contact">
-        <h2><span class="n">14</span> Contact</h2>
+        <h2><span class="n">11</span> Contact</h2>
         <p><strong>Oz Scholars Academy</strong></p>
         <p>Email: <a href="mailto:ozscholarsacademy@gmail.com">ozscholarsacademy@gmail.com</a><br />
         Website: <a href="http://www.ozscholarsacademy.com.au">www.ozscholarsacademy.com.au</a></p>
       </section>
 
       <div class="legal-note">
-        <strong>Please note:</strong> This document is provided as a general template. We recommend having it reviewed by a qualified solicitor and checked against the Australian Privacy Principles before publication.
+        <strong>Important:</strong> This Child Safety Policy is a starting-point template only. Child-safe obligations in Australia (including the National Principles for Child Safe Organisations, NSW Child Safe Standards, mandatory reporting, and reportable conduct schemes) are detailed and carry legal weight. Have this policy reviewed and tailored by a qualified solicitor or child-safety professional before publishing or relying on it.
       </div>
     </article>
   </div>

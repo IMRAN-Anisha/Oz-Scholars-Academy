@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terms &amp; Conditions — Oz Scholars Academy</title>
+<meta name="description" content="The Terms & Conditions governing the use of Oz Scholars Academy's tutoring and educational services." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="icon" href="/assets/logo.png" type="image/png" />
+<style>
+  /* Page-specific layout for the legal pages (shared across all four) */
+  .legal-head { padding-block: clamp(2.5rem, 5vw, 4rem) 1.5rem; }
+  .legal-head h1 { font-size: clamp(2.1rem, 5vw, 3.1rem); }
+  .legal-head .lede { color: var(--ink-soft); max-width: 46rem; margin-top: 1rem; font-size: 1.02rem; }
+  .legal-meta { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1.4rem; }
+
+  .legal-layout { display:grid; grid-template-columns: 250px 1fr; gap: 2.8rem; align-items:start; }
+  .toc { position: sticky; top: 104px; }
+  .toc-title { font-family:'JetBrains Mono',monospace; font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; color: var(--ink-soft); margin-bottom:.8rem; }
+  .toc ol { list-style:none; margin:0; padding:0; counter-reset: toc; display:grid; gap:.1rem; }
+  .toc a {
+    display:block; text-decoration:none; color: var(--ink-soft);
+    font-size:.88rem; font-weight:600; line-height:1.35;
+    padding:.42rem .6rem; border-radius:9px; border-left:2px solid transparent;
+    transition: color .15s ease, background .15s ease, border-color .15s ease;
+  }
+  .toc a:hover { color: var(--brand); background: var(--brand-tint); }
+  .toc a.active { color: var(--brand); background: var(--brand-tint); border-left-color: var(--brand); }
+
+  .legal-body { padding: 2rem clamp(1.2rem, 3vw, 2.6rem); }
+  .legal-body section { scroll-margin-top: 104px; }
+  .legal-body section + section { margin-top: 2.4rem; padding-top: 2.4rem; border-top: 1px solid var(--line); }
+  .legal-body h2 {
+    font-size: 1.32rem; display:flex; align-items:baseline; gap:.7rem;
+  }
+  .legal-body h2 .n {
+    font-family:'JetBrains Mono',monospace; font-size:.95rem; font-weight:700;
+    color: var(--brand); flex:none;
+  }
+  .legal-body h3 { font-size: 1rem; margin-top: 1.3rem; color: var(--ink); }
+  .legal-body p { color: var(--ink-soft); margin:.85rem 0; }
+  .legal-body ul { margin:.7rem 0; padding-left: 0; list-style:none; display:grid; gap:.5rem; }
+  .legal-body ul li { position:relative; padding-left: 1.5rem; color: var(--ink-soft); }
+  .legal-body ul li::before {
+    content:""; position:absolute; left:.25rem; top:.62em;
+    width:6px; height:6px; border-radius:2px; background: var(--marker-deep);
+  }
+  .legal-body a { color: var(--brand); font-weight:600; text-decoration: none; }
+  .legal-body a:hover { text-decoration: underline; }
+  .legal-body strong { color: var(--ink); }
+
+  .legal-note {
+    margin-top: 2.6rem; background: var(--marker-soft);
+    border-radius: var(--radius); padding: 1.1rem 1.3rem;
+    font-size:.9rem; color: var(--gold-text); line-height:1.6;
+  }
+  .legal-note strong { color: var(--gold-text); }
+
+  @media (max-width: 880px){
+    .legal-layout { grid-template-columns: 1fr; gap: 1.6rem; }
+    .toc { position: static; top:auto; }
+    .toc ol { grid-template-columns: 1fr 1fr; gap:.2rem .8rem; }
+  }
+  @media (max-width: 520px){ .toc ol { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand-logo" href="/">
+      <span class="brand-mark"></span>
+      <span class="brand-text">Oz Scholars Academy</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link active" href="/terms-and-conditions/">Terms</a>
+      <a class="nav-link" href="/privacy-policy/">Privacy</a>
+      <a class="nav-link" href="/cancellations-and-refunds/">Refunds</a>
+      <a class="nav-link" href="/child-safety/">Child Safety</a>
+      <a class="btn btn-primary nav-cta" href="mailto:ozscholarsacademy@gmail.com">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu">
+    <div class="mm-inner">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/terms-and-conditions/">Terms &amp; Conditions</a>
+      <a class="nav-link" href="/privacy-policy/">Privacy Policy</a>
+      <a class="nav-link" href="/cancellations-and-refunds/">Cancellation &amp; Refund Policy</a>
+      <a class="nav-link" href="/child-safety/">Child Safety Policy</a>
+      <a class="btn btn-primary" href="mailto:ozscholarsacademy@gmail.com">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="legal-head">
+  <div class="wrap">
+    <span class="eyebrow">Legal</span>
+    <h1>Terms &amp; <span class="hl">Conditions</span></h1>
+    <p class="lede">The terms below govern your access to and use of Oz Scholars Academy's website, tutoring sessions, resources, events, and related services.</p>
+    <div class="legal-meta">
+      <span class="tag">Last updated · 17 June 2026</span>
+      <span class="tag tag-electric">Governing law · New South Wales</span>
+    </div>
+  </div>
+</header>
+
+<!-- BODY -->
+<main class="section" style="padding-top:.5rem">
+  <div class="wrap legal-layout">
+    <aside class="toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ol>
+        <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+        <li><a href="#about">2. About OSA</a></li>
+        <li><a href="#eligibility">3. Eligibility</a></li>
+        <li><a href="#accounts">4. User Accounts</a></li>
+        <li><a href="#bookings">5. Bookings &amp; Sessions</a></li>
+        <li><a href="#fees">6. Fees &amp; Payments</a></li>
+        <li><a href="#ip">7. Intellectual Property</a></li>
+        <li><a href="#conduct">8. User Conduct</a></li>
+        <li><a href="#disclaimer">9. Educational Disclaimer</a></li>
+        <li><a href="#thirdparty">10. Third Party Services</a></li>
+        <li><a href="#liability">11. Limitation of Liability</a></li>
+        <li><a href="#indemnity">12. Indemnity</a></li>
+        <li><a href="#termination">13. Termination</a></li>
+        <li><a href="#law">14. Governing Law</a></li>
+        <li><a href="#contact">15. Contact Information</a></li>
+      </ol>
+    </aside>
+
+    <article class="legal-body card-flat">
+      <section id="acceptance">
+        <h2><span class="n">01</span> Acceptance of Terms</h2>
+        <p>Welcome to Oz Scholars Academy ("OSA", "we", "our", or "us").</p>
+        <p>By accessing our website, registering an account, booking tutoring services, attending events, using educational resources, or otherwise engaging with our services, you agree to be bound by these Terms &amp; Conditions.</p>
+        <p>If you do not agree to these Terms, you must not use our services.</p>
+      </section>
+
+      <section id="about">
+        <h2><span class="n">02</span> About Oz Scholars Academy</h2>
+        <p>Oz Scholars Academy is an educational platform that provides:</p>
+        <ul>
+          <li>Online tutoring</li>
+          <li>Academic mentoring</li>
+          <li>Educational resources</li>
+          <li>Workshops and events</li>
+          <li>Study support services</li>
+          <li>Technology enabled learning tools</li>
+          <li>Parent and student support services</li>
+        </ul>
+        <p>We reserve the right to modify, suspend, or discontinue any service at any time.</p>
+      </section>
+
+      <section id="eligibility">
+        <h2><span class="n">03</span> Eligibility</h2>
+        <p>Users must:</p>
+        <ul>
+          <li>Be at least 18 years old; or</li>
+          <li>Have permission from a parent or legal guardian.</li>
+        </ul>
+        <p>Parents and guardians remain responsible for supervising minors who use our services.</p>
+      </section>
+
+      <section id="accounts">
+        <h2><span class="n">04</span> User Accounts</h2>
+        <p>Users may be required to create an account. You agree to:</p>
+        <ul>
+          <li>Provide accurate information</li>
+          <li>Keep login details secure</li>
+          <li>Maintain updated account information</li>
+          <li>Accept responsibility for activity on your account</li>
+        </ul>
+        <p>We reserve the right to suspend or terminate accounts that violate these Terms.</p>
+      </section>
+
+      <section id="bookings">
+        <h2><span class="n">05</span> Bookings &amp; Sessions</h2>
+        <p>Tutoring sessions must be booked through approved methods.</p>
+        <p><strong>Students and parents are responsible for:</strong></p>
+        <ul>
+          <li>Attending sessions on time</li>
+          <li>Providing accurate contact information</li>
+          <li>Maintaining a suitable learning environment</li>
+        </ul>
+        <p><strong>Tutors are responsible for:</strong></p>
+        <ul>
+          <li>Delivering services professionally</li>
+          <li>Maintaining punctuality</li>
+          <li>Providing accurate qualifications and experience</li>
+        </ul>
+        <p>OSA does not guarantee specific academic outcomes. Cancellations, rescheduling, and refunds are governed by our <a href="refunds.html">Cancellation &amp; Refund Policy</a>.</p>
+      </section>
+
+      <section id="fees">
+        <h2><span class="n">06</span> Fees &amp; Payments</h2>
+        <p>All fees are displayed in Australian Dollars (AUD).</p>
+        <p>Payments may be required before services are delivered. Failure to make payment may result in suspension of services.</p>
+        <p>Prices may change at any time without prior notice.</p>
+      </section>
+
+      <section id="ip">
+        <h2><span class="n">07</span> Intellectual Property</h2>
+        <p>All content provided by OSA including website content, logos, branding, educational materials, course content, videos, graphics, and software remains the property of Oz Scholars Academy or its licensors.</p>
+        <p>Users may not copy, reproduce, distribute, modify, or commercialise any content without written permission.</p>
+      </section>
+
+      <section id="conduct">
+        <h2><span class="n">08</span> User Conduct</h2>
+        <p>Users must not:</p>
+        <ul>
+          <li>Harass other users</li>
+          <li>Use abusive language</li>
+          <li>Share inappropriate content</li>
+          <li>Misrepresent identity or qualifications</li>
+          <li>Engage in unlawful conduct</li>
+          <li>Attempt to access restricted systems</li>
+        </ul>
+        <p>OSA may suspend or permanently remove users who breach these requirements.</p>
+      </section>
+
+      <section id="disclaimer">
+        <h2><span class="n">09</span> Educational Disclaimer</h2>
+        <p>OSA provides educational support services only. We do not guarantee:</p>
+        <ul>
+          <li>Academic grades</li>
+          <li>Examination results</li>
+          <li>University admission</li>
+          <li>Scholarships</li>
+          <li>Employment outcomes</li>
+        </ul>
+        <p>Educational outcomes depend on many factors beyond our control.</p>
+      </section>
+
+      <section id="thirdparty">
+        <h2><span class="n">10</span> Third Party Services</h2>
+        <p>We may use third party services including:</p>
+        <ul>
+          <li>Zoom</li>
+          <li>Google Meet</li>
+          <li>Stripe</li>
+          <li>PayPal</li>
+          <li>Learning management systems</li>
+          <li>Communication platforms</li>
+        </ul>
+        <p>We are not responsible for third party platforms or their policies.</p>
+      </section>
+
+      <section id="liability">
+        <h2><span class="n">11</span> Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, OSA will not be liable for:</p>
+        <ul>
+          <li>Indirect loss</li>
+          <li>Consequential loss</li>
+          <li>Loss of profits</li>
+          <li>Loss of opportunity</li>
+          <li>Loss of data</li>
+          <li>Educational outcomes</li>
+        </ul>
+        <p>Our total liability is limited to the amount paid by the user for the relevant service.</p>
+      </section>
+
+      <section id="indemnity">
+        <h2><span class="n">12</span> Indemnity</h2>
+        <p>Users agree to indemnify and hold harmless Oz Scholars Academy, its employees, contractors, tutors, directors, and affiliates from claims arising from misuse of our services.</p>
+      </section>
+
+      <section id="termination">
+        <h2><span class="n">13</span> Termination</h2>
+        <p>OSA may suspend or terminate access where:</p>
+        <ul>
+          <li>These Terms are breached</li>
+          <li>Fraudulent activity is suspected</li>
+          <li>Child safety concerns arise</li>
+          <li>User behaviour poses risk to others</li>
+        </ul>
+      </section>
+
+      <section id="law">
+        <h2><span class="n">14</span> Governing Law</h2>
+        <p>These Terms are governed by the laws of New South Wales, Australia.</p>
+        <p>Any disputes shall be subject to the exclusive jurisdiction of the courts of New South Wales.</p>
+      </section>
+
+      <section id="contact">
+        <h2><span class="n">15</span> Contact Information</h2>
+        <p><strong>Oz Scholars Academy</strong></p>
+        <p>Email: <a href="mailto:ozscholarsacademy@gmail.com">ozscholarsacademy@gmail.com</a><br />
+        Website: <a href="http://www.ozscholarsacademy.com.au">www.ozscholarsacademy.com.au</a></p>
+      </section>
+
+      <div class="legal-note">
+        <strong>Please note:</strong> This document is provided as a general template. We recommend having it reviewed by a qualified solicitor before publication to ensure it suits your specific circumstances and complies with current Australian law.
+      </div>
+    </article>
+  </div>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="/" class="brand-logo" style="margin-bottom:.9rem;">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Oz Scholars Academy</span>
+      </a>
+      <p class="footer-tagline"><strong>Better Marks.</strong><span>Better Confidence.</span><span>Better Future.</span></p>
+    </div>
+    <div>
+      <h4>Programs</h4>
+      <p style="display:grid; gap:.5rem; margin:0;">
+        <a href="/programs/">Holiday Masterclasses</a>
+        <a href="/programs/">Group Accelerator</a>
+        <a href="/programs/">Accelerator Plus</a>
+        <a href="/programs/">Private Coaching</a>
+      </p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <p style="display:grid; gap:.5rem; margin:0;">
+        <a href="/tech-labs/">Tech Labs</a>
+        <a href="/referral/">Refer a friend</a>
+        <a href="/referral/">Become a partner</a><a href="/work-with-us/">Work with us</a>
+        <a href="/contact/#book">Book a free lesson</a>
+      </p>
+    </div>
+    <div>
+      <h4>Policies</h4>
+      <p style="display:grid; gap:.5rem; margin:0;">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+        <a href="/cancellations-and-refunds/">Cancellations &amp; Refunds</a>
+        <a href="/child-safety/">Child Safety</a>
+      </p>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <p style="display:grid; gap:.5rem; margin:0;">
+        <a href="mailto:ozscholarsacademy@gmail.com">ozscholarsacademy@gmail.com</a>
+        <a href="/contact/">Enquiry form</a>
+        <span style="color:#b6b2d4;">Online · Australia-wide</span>
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Oz Scholars Academy. All rights reserved.</span>
+    <span class="mono">Academic success, engineered.</span>
+  </div>
+</footer>
+
+<script>
+  // Scroll progress bar
+  const progress = document.getElementById('scroll-progress');
+  const nav = document.getElementById('nav');
+  function onScroll(){
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+    if (progress) progress.style.width = (scrolled * 100) + '%';
+    if (nav) nav.classList.toggle('scrolled', h.scrollTop > 8);
+  }
+  document.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  // Mobile menu
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobile-menu');
+  if (toggle && menu){
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+  }
+
+  // Active TOC highlighting
+  const tocLinks = Array.from(document.querySelectorAll('.toc a'));
+  const sections = tocLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  if ('IntersectionObserver' in window && sections.length){
+    const byId = {};
+    tocLinks.forEach(a => byId[a.getAttribute('href').slice(1)] = a);
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting){
+          tocLinks.forEach(l => l.classList.remove('active'));
+          const link = byId[e.target.id];
+          if (link) link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    sections.forEach(s => obs.observe(s));
+  }
+</script>
+</body>
+</html>

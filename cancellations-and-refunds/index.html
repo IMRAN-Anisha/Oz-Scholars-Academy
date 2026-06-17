@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Privacy Policy — Oz Scholars Academy</title>
-<meta name="description" content="How Oz Scholars Academy collects, uses, stores, and protects your personal information." />
+<title>Cancellation &amp; Refund Policy — Oz Scholars Academy</title>
+<meta name="description" content="How Oz Scholars Academy handles cancellations, rescheduling, refunds, and missed sessions." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -43,6 +43,17 @@
   .legal-body a:hover { text-decoration: underline; }
   .legal-body strong { color: var(--ink); }
 
+  /* Notice callout for the 24-hour rule */
+  .notice {
+    display:flex; gap:.8rem; align-items:flex-start;
+    background: var(--brand-tint); border:1px solid #ffd5de;
+    border-radius: var(--radius); padding: 1rem 1.1rem; margin:1rem 0;
+    color: var(--ink-soft); font-size:.94rem;
+  }
+  .notice svg { flex:none; margin-top:.1rem; color: var(--brand); }
+  .notice.good { background:#eafaf0; border-color:#b6e6c8; }
+  .notice.good svg { color: var(--success); }
+
   .legal-note { margin-top: 2.6rem; background: var(--marker-soft); border-radius: var(--radius); padding: 1.1rem 1.3rem; font-size:.9rem; color: var(--gold-text); line-height:1.6; }
   .legal-note strong { color: var(--gold-text); }
 
@@ -66,8 +77,8 @@
     <div class="nav-links">
       <a class="nav-link" href="/">Home</a>
       <a class="nav-link" href="/terms-and-conditions/">Terms</a>
-      <a class="nav-link active" href="/privacy-policy/">Privacy</a>
-      <a class="nav-link" href="/cancellations-and-refunds/">Refunds</a>
+      <a class="nav-link" href="/privacy-policy/">Privacy</a>
+      <a class="nav-link active" href="/cancellations-and-refunds/">Refunds</a>
       <a class="nav-link" href="/child-safety/">Child Safety</a>
       <a class="btn btn-primary nav-cta" href="mailto:ozscholarsacademy@gmail.com">Contact</a>
     </div>
@@ -90,11 +101,11 @@
 <header class="legal-head">
   <div class="wrap">
     <span class="eyebrow">Legal</span>
-    <h1>Privacy <span class="hl">Policy</span></h1>
-    <p class="lede">Oz Scholars Academy is committed to protecting your privacy. This policy explains how we collect, use, disclose, store, and protect your personal information.</p>
+    <h1>Cancellation &amp; <span class="hl">Refund</span> Policy</h1>
+    <p class="lede">This policy outlines how cancellations, rescheduling requests, refunds, and missed sessions are handled by Oz Scholars Academy.</p>
     <div class="legal-meta">
       <span class="tag">Last updated · 17 June 2026</span>
-      <span class="tag tag-electric">We do not sell your data</span>
+      <span class="tag tag-marker">24-hour notice applies</span>
     </div>
   </div>
 </header>
@@ -104,172 +115,112 @@
     <aside class="toc" aria-label="On this page">
       <p class="toc-title">On this page</p>
       <ol>
-        <li><a href="#intro">1. Introduction</a></li>
-        <li><a href="#collect">2. Information We Collect</a></li>
-        <li><a href="#how-collect">3. How We Collect Information</a></li>
-        <li><a href="#use">4. How We Use Information</a></li>
-        <li><a href="#marketing">5. Marketing Communications</a></li>
-        <li><a href="#cookies">6. Cookies</a></li>
-        <li><a href="#sharing">7. Sharing Information</a></li>
-        <li><a href="#security">8. Data Storage &amp; Security</a></li>
-        <li><a href="#overseas">9. Overseas Data Transfers</a></li>
-        <li><a href="#children">10. Children's Privacy</a></li>
-        <li><a href="#access">11. Access &amp; Correction</a></li>
-        <li><a href="#retention">12. Data Retention</a></li>
-        <li><a href="#changes">13. Changes to this Policy</a></li>
-        <li><a href="#contact">14. Contact</a></li>
+        <li><a href="#purpose">1. Purpose</a></li>
+        <li><a href="#student">2. Student Cancellations</a></li>
+        <li><a href="#tutor">3. Tutor Cancellations</a></li>
+        <li><a href="#missed">4. Missed Sessions</a></li>
+        <li><a href="#technical">5. Technical Issues</a></li>
+        <li><a href="#packages">6. Package Refunds</a></li>
+        <li><a href="#digital">7. Digital Products</a></li>
+        <li><a href="#events">8. Events &amp; Workshops</a></li>
+        <li><a href="#exceptional">9. Exceptional Circumstances</a></li>
+        <li><a href="#contact">10. Contact</a></li>
       </ol>
     </aside>
 
     <article class="legal-body card-flat">
-      <section id="intro">
-        <h2><span class="n">01</span> Introduction</h2>
-        <p>Oz Scholars Academy is committed to protecting your privacy.</p>
-        <p>This Privacy Policy explains how we collect, use, disclose, store, and protect your personal information.</p>
+      <section id="purpose">
+        <h2><span class="n">01</span> Purpose</h2>
+        <p>This policy outlines how cancellations, rescheduling requests, refunds, and missed sessions are handled by Oz Scholars Academy.</p>
       </section>
 
-      <section id="collect">
-        <h2><span class="n">02</span> Information We Collect</h2>
-        <h3>Personal Information</h3>
-        <p>We may collect:</p>
-        <ul>
-          <li>Full name</li>
-          <li>Email address</li>
-          <li>Phone number</li>
-          <li>Residential suburb</li>
-          <li>Date of birth</li>
-          <li>Parent or guardian details</li>
-          <li>Educational information</li>
-          <li>Account details</li>
-          <li>Billing information</li>
-        </ul>
-        <h3>Technical Information</h3>
-        <p>We may collect:</p>
-        <ul>
-          <li>IP address</li>
-          <li>Device information</li>
-          <li>Browser information</li>
-          <li>Website activity</li>
-          <li>Cookies</li>
-          <li>Analytics information</li>
-        </ul>
+      <section id="student">
+        <h2><span class="n">02</span> Student Cancellations</h2>
+        <div class="notice good">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span><strong style="color:var(--ink)">More than 24 hours notice.</strong> Students may cancel or reschedule sessions without penalty when at least 24 hours notice is provided.</span>
+        </div>
+        <div class="notice">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span><strong style="color:var(--ink)">Less than 24 hours notice.</strong> Where less than 24 hours notice is provided, the session may be forfeited, no refund may be provided, and rescheduling is not guaranteed.</span>
+        </div>
+        <p>Exceptions may be considered for emergencies.</p>
       </section>
 
-      <section id="how-collect">
-        <h2><span class="n">03</span> How We Collect Information</h2>
-        <p>We collect information when you:</p>
+      <section id="tutor">
+        <h2><span class="n">03</span> Tutor Cancellations</h2>
+        <p>If a tutor cancels:</p>
         <ul>
-          <li>Create an account</li>
-          <li>Book services</li>
-          <li>Complete forms</li>
-          <li>Subscribe to newsletters</li>
-          <li>Contact us</li>
-          <li>Attend events</li>
-          <li>Use our website</li>
+          <li>The session will be rescheduled; or</li>
+          <li>A credit will be provided; or</li>
+          <li>A refund may be issued,</li>
+        </ul>
+        <p>at the discretion of Oz Scholars Academy.</p>
+      </section>
+
+      <section id="missed">
+        <h2><span class="n">04</span> Missed Sessions</h2>
+        <p>If a student does not attend a scheduled session without notice:</p>
+        <ul>
+          <li>The session will be considered completed</li>
+          <li>No refund will be issued</li>
+          <li>No replacement session is guaranteed</li>
         </ul>
       </section>
 
-      <section id="use">
-        <h2><span class="n">04</span> How We Use Information</h2>
-        <p>We use information to:</p>
+      <section id="technical">
+        <h2><span class="n">05</span> Technical Issues</h2>
+        <p>Where technical issues occur:</p>
         <ul>
-          <li>Deliver tutoring services</li>
-          <li>Match students with tutors</li>
-          <li>Manage bookings</li>
-          <li>Process payments</li>
-          <li>Improve services</li>
-          <li>Respond to enquiries</li>
-          <li>Maintain platform security</li>
-          <li>Send updates and communications</li>
+          <li>OSA will assess the situation</li>
+          <li>A replacement session may be offered</li>
+          <li>Credits may be issued where appropriate</li>
         </ul>
       </section>
 
-      <section id="marketing">
-        <h2><span class="n">05</span> Marketing Communications</h2>
-        <p>We may send:</p>
+      <section id="packages">
+        <h2><span class="n">06</span> Package Refunds</h2>
+        <p>Unused tutoring credits may be eligible for partial refunds.</p>
+        <p>Completed sessions are non refundable. Administrative fees may apply.</p>
+      </section>
+
+      <section id="digital">
+        <h2><span class="n">07</span> Digital Products</h2>
+        <p>Digital products including:</p>
         <ul>
-          <li>Newsletters</li>
-          <li>Educational updates</li>
-          <li>Promotions</li>
-          <li>Event invitations</li>
+          <li>Study guides</li>
+          <li>Downloadable resources</li>
+          <li>Templates</li>
+          <li>Educational materials</li>
         </ul>
-        <p>Users may unsubscribe at any time.</p>
+        <p>are generally non refundable once accessed or downloaded.</p>
       </section>
 
-      <section id="cookies">
-        <h2><span class="n">06</span> Cookies</h2>
-        <p>Cookies may be used to:</p>
+      <section id="events">
+        <h2><span class="n">08</span> Events &amp; Workshops</h2>
+        <p>Refunds for events may be available where cancellation occurs at least 7 days before the event.</p>
+        <p>No refunds may be provided for non attendance.</p>
+      </section>
+
+      <section id="exceptional">
+        <h2><span class="n">09</span> Exceptional Circumstances</h2>
+        <p>OSA may provide refunds outside this policy in exceptional circumstances including:</p>
         <ul>
-          <li>Improve user experience</li>
-          <li>Remember preferences</li>
-          <li>Measure website traffic</li>
-          <li>Improve website functionality</li>
+          <li>Serious illness</li>
+          <li>Family emergencies</li>
+          <li>Significant service failures</li>
         </ul>
-        <p>Users can disable cookies through browser settings.</p>
-      </section>
-
-      <section id="sharing">
-        <h2><span class="n">07</span> Sharing Information</h2>
-        <p>We may disclose information to:</p>
-        <ul>
-          <li>Tutors</li>
-          <li>Contractors</li>
-          <li>Technology providers</li>
-          <li>Payment processors</li>
-          <li>Legal authorities where required</li>
-        </ul>
-        <p>We do not sell personal information.</p>
-      </section>
-
-      <section id="security">
-        <h2><span class="n">08</span> Data Storage &amp; Security</h2>
-        <p>We implement reasonable safeguards to protect information.</p>
-        <p>While we take security seriously, no electronic system can guarantee complete security.</p>
-      </section>
-
-      <section id="overseas">
-        <h2><span class="n">09</span> Overseas Data Transfers</h2>
-        <p>Some providers may store information outside Australia.</p>
-        <p>By using our services, you consent to these transfers where reasonably necessary.</p>
-      </section>
-
-      <section id="children">
-        <h2><span class="n">10</span> Children's Privacy</h2>
-        <p>We provide services to minors.</p>
-        <p>Where required, parental consent will be obtained before collecting information from children. For more on how we keep young people safe, see our <a href="child-safety.html">Child Safety Policy</a>.</p>
-      </section>
-
-      <section id="access">
-        <h2><span class="n">11</span> Access &amp; Correction</h2>
-        <p>Users may request access to their personal information and request corrections to inaccurate information.</p>
-      </section>
-
-      <section id="retention">
-        <h2><span class="n">12</span> Data Retention</h2>
-        <p>Information is retained only for as long as reasonably necessary to:</p>
-        <ul>
-          <li>Deliver services</li>
-          <li>Meet legal obligations</li>
-          <li>Resolve disputes</li>
-          <li>Protect our business interests</li>
-        </ul>
-      </section>
-
-      <section id="changes">
-        <h2><span class="n">13</span> Changes to this Policy</h2>
-        <p>We may update this Privacy Policy periodically.</p>
-        <p>Updated versions will be published on this page.</p>
+        <p>Refund decisions remain at our sole discretion.</p>
       </section>
 
       <section id="contact">
-        <h2><span class="n">14</span> Contact</h2>
-        <p><strong>Oz Scholars Academy</strong></p>
-        <p>Email: <a href="mailto:ozscholarsacademy@gmail.com">ozscholarsacademy@gmail.com</a><br />
-        Website: <a href="http://www.ozscholarsacademy.com.au">www.ozscholarsacademy.com.au</a></p>
+        <h2><span class="n">10</span> Contact</h2>
+        <p>Refund requests should be submitted to:</p>
+        <p>Email: <a href="mailto:ozscholarsacademy@gmail.com">ozscholarsacademy@gmail.com</a></p>
       </section>
 
       <div class="legal-note">
-        <strong>Please note:</strong> This document is provided as a general template. We recommend having it reviewed by a qualified solicitor and checked against the Australian Privacy Principles before publication.
+        <strong>Please note:</strong> This document is provided as a general template. Australian Consumer Law guarantees certain consumer rights that cannot be excluded. We recommend having this policy reviewed by a qualified solicitor before publication.
       </div>
     </article>
   </div>
